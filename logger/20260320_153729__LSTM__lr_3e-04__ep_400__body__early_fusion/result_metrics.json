@@ -1,0 +1,15 @@
+{
+  "run_name": "20260320_153729__LSTM__lr_3e-04__ep_400__body__early_fusion",
+  "train_loss_last": 1.466482720948905,
+  "train_acc_last": 0.3524355300859599,
+  "val_loss_last": 1.515263220469157,
+  "val_acc_last": 0.37333333333333335,
+  "test_loss": 1.4929645186976384,
+  "test_acc": 0.3026315789473684,
+  "test_precision_macro": 0.26482352941176474,
+  "test_recall_macro": 0.31269230769230766,
+  "test_f1_macro": 0.2580320366132723,
+  "test_precision_weighted": 0.25784055727554184,
+  "test_recall_weighted": 0.3026315789473684,
+  "test_f1_weighted": 0.25020474527279296
+}

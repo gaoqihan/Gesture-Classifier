@@ -1,0 +1,2 @@
+run_name,train_loss_last,train_acc_last,val_loss_last,val_acc_last,test_loss,test_acc,test_precision_macro,test_recall_macro,test_f1_macro,test_precision_weighted,test_recall_weighted,test_f1_weighted
+20260320_153930__LSTM__lr_3e-04__ep_400__hand__early_fusion,1.6079070018150745,0.22063037249283668,1.6087835105260213,0.21333333333333335,1.6079163300363641,0.21052631578947367,0.042105263157894736,0.2,0.06956521739130435,0.0443213296398892,0.21052631578947367,0.07322654462242563

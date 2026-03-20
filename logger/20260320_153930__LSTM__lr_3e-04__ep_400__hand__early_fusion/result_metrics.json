@@ -1,0 +1,15 @@
+{
+  "run_name": "20260320_153930__LSTM__lr_3e-04__ep_400__hand__early_fusion",
+  "train_loss_last": 1.6079070018150745,
+  "train_acc_last": 0.22063037249283668,
+  "val_loss_last": 1.6087835105260213,
+  "val_acc_last": 0.21333333333333335,
+  "test_loss": 1.6079163300363641,
+  "test_acc": 0.21052631578947367,
+  "test_precision_macro": 0.042105263157894736,
+  "test_recall_macro": 0.2,
+  "test_f1_macro": 0.06956521739130435,
+  "test_precision_weighted": 0.0443213296398892,
+  "test_recall_weighted": 0.21052631578947367,
+  "test_f1_weighted": 0.07322654462242563
+}
