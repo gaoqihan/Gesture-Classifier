@@ -1,0 +1,20 @@
+{
+  "run_name": "20260320_185614__ADDCLS_CNN__lr_1e-04__ep_400__body+hand__add_new_class__new_sit__n_1",
+  "new_class_name": "sit",
+  "new_class_train_samples": 1,
+  "init_mode": "expand_from_checkpoint",
+  "train_loss_last": 0.10364602412763145,
+  "train_acc_last": 0.98005698005698,
+  "val_loss_last": 0.3780515127711826,
+  "val_acc_last": 0.9333333333333333,
+  "test_loss": 0.4086672021792485,
+  "test_acc": 0.978021978021978,
+  "test_precision_macro": 0.9782913165266107,
+  "test_recall_macro": 0.9784722222222223,
+  "test_f1_macro": 0.977653184920519,
+  "test_precision_weighted": 0.9794533197894543,
+  "test_recall_weighted": 0.978021978021978,
+  "test_f1_weighted": 0.9780252705725453,
+  "early_stopped": true,
+  "best_epoch": 35
+}

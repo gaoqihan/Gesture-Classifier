@@ -1,0 +1,78 @@
+{
+  "run_info": {
+    "timestamp": "2026-03-20T18:49:33.788428",
+    "run_note": "add_new_class",
+    "run_type": "add_function"
+  },
+  "data": {
+    "DATA_ROOT": "hand_dummy/data",
+    "LABELS": [
+      "go",
+      "stop",
+      "left",
+      "right",
+      "null",
+      "sit"
+    ],
+    "NUM_CLASSES": 6,
+    "NEW_CLASS_NAME": "sit",
+    "NEW_CLASS_TRAIN_SAMPLES": 70,
+    "VIDEO_INPUT_ENABLED": false,
+    "BODY_POSE_INPUT_ENABLED": true,
+    "HAND_POSE_INPUT_ENABLED": true,
+    "BODY_LANDMARK_USED": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "VIDEO_SIZE": [
+      112,
+      112
+    ],
+    "VIDEO_NORMALIZE": true,
+    "VIDEO_PAD_LENGTH": 64,
+    "BODY_PAD_LENGTH": 64,
+    "HAND_PAD_LENGTH": 64
+  },
+  "training": {
+    "INIT_MODE": "expand_from_checkpoint",
+    "PREVIOUS_RUN_DIR": "./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion",
+    "PREVIOUS_CHECKPOINT_PATH": "./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt",
+    "TRAIN_RATIO": 0.7,
+    "VAL_RATIO": 0.15,
+    "TEST_RATIO": 0.15,
+    "RANDOM_SEED": 42,
+    "STRATIFY": true,
+    "BATCH_SIZE": 16,
+    "NUM_WORKERS": 0,
+    "EPOCHS": 400,
+    "LEARNING_RATE": 0.0001,
+    "WEIGHT_DECAY": 0.0001,
+    "USE_CLASS_WEIGHTS": true,
+    "USE_LR_SCHEDULER": true,
+    "EARLY_STOPPING_PATIENCE": 10,
+    "EARLY_STOPPING_MIN_DELTA": 0.0001,
+    "DEVICE": "cuda"
+  },
+  "model": {
+    "model_structure": "GestureCNNClassifier(\n  (encoder): MultiModalEarlyFusionEncoder(\n    (body_encoder): BodyEncoder(\n      (net): Sequential(\n        (0): Linear(in_features=16, out_features=32, bias=True)\n        (1): ReLU(inplace=True)\n      )\n    )\n    (hand_encoder): HandEncoder(\n      (net): Sequential(\n        (0): Linear(in_features=42, out_features=32, bias=True)\n        (1): ReLU(inplace=True)\n      )\n    )\n  )\n  (temporal_conv): Sequential(\n    (0): Conv1d(64, 128, kernel_size=(3,), stride=(1,), padding=(1,))\n    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n    (2): ReLU(inplace=True)\n    (3): Dropout(p=0.2, inplace=False)\n    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))\n    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n    (6): ReLU(inplace=True)\n    (7): Dropout(p=0.2, inplace=False)\n    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))\n    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n    (10): ReLU(inplace=True)\n    (11): AdaptiveAvgPool1d(output_size=1)\n  )\n  (classifier): Sequential(\n    (0): Linear(in_features=128, out_features=128, bias=True)\n    (1): ReLU(inplace=True)\n    (2): Dropout(p=0.3, inplace=False)\n    (3): Linear(in_features=128, out_features=6, bias=True)\n  )\n)",
+    "total_parameters": 143238,
+    "trainable_parameters": 143238
+  },
+  "early_stopping_result": {
+    "early_stopped": true,
+    "early_stop_reason": "No val loss improvement > 0.0001 for 10 consecutive epochs.",
+    "best_epoch": 32,
+    "best_val_loss": 0.10635387202103933,
+    "best_val_acc": 0.9666666666666667
+  },
+  "paths": {
+    "run_dir": "./logger_add_function/20260320_184926__ADDCLS_CNN__lr_1e-04__ep_400__body+hand__add_new_class_sweep__new_sit__n_70",
+    "best_model_path": "./logger_add_function/20260320_184926__ADDCLS_CNN__lr_1e-04__ep_400__body+hand__add_new_class_sweep__new_sit__n_70/best_model.pt"
+  }
+}
