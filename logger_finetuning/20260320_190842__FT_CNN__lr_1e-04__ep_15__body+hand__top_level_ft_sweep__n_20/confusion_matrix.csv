@@ -1,0 +1,6 @@
+,go,stop,left,right,null
+go,39,0,0,8,0
+stop,0,39,8,0,0
+left,1,0,18,0,32
+right,0,0,47,0,0
+null,0,5,18,0,24

@@ -1,0 +1,40 @@
+{
+  "loss": 2.005006790161133,
+  "acc": 0.4,
+  "preds": [
+    4,
+    2,
+    2,
+    0,
+    1,
+    3,
+    4,
+    4,
+    1,
+    2
+  ],
+  "labels": [
+    2,
+    4,
+    3,
+    0,
+    1,
+    0,
+    2,
+    4,
+    1,
+    3
+  ],
+  "session_ids": [
+    "session_0046",
+    "session_0011",
+    "session_0042",
+    "session_0031",
+    "session_0040",
+    "session_0005",
+    "session_0028",
+    "session_0038",
+    "session_0038",
+    "session_0041"
+  ]
+}

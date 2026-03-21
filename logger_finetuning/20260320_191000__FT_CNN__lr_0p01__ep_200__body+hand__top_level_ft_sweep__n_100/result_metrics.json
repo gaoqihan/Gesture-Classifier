@@ -1,0 +1,19 @@
+{
+  "run_name": "20260320_191000__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_100",
+  "mode": "finetuning",
+  "finetune_train_loss_last": 0.7189107596874237,
+  "finetune_train_acc_last": 0.79,
+  "finetune_val_loss_last": 0.3121237355817414,
+  "finetune_val_acc_last": 0.9371069182389937,
+  "val_loss": 0.3103671678863231,
+  "val_acc": 0.949685534591195,
+  "val_precision_macro": 0.9506513409961685,
+  "val_recall_macro": 0.9489563567362429,
+  "val_f1_macro": 0.9488567768678307,
+  "val_precision_weighted": 0.9511940046748113,
+  "val_recall_weighted": 0.949685534591195,
+  "val_f1_weighted": 0.949491828715088,
+  "finetune_num_samples": 100,
+  "early_stopped": true,
+  "best_epoch": 30
+}

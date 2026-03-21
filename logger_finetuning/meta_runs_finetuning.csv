@@ -215,7 +215,7 @@ acc_plot_path,best_epoch,checkpoint_path,cm_plot_path,data.BODY_LANDMARK_USED,da
     (3): Linear(in_features=128, out_features=5, bias=True)
   )
 )",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p01__ep_200__n_100__body+hand.pt,./logger_finetuning/20260320_182823__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_100,./logger_finetuning/20260320_182823__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_100,classifier_head_only,finetuning,2026-03-20T18:28:23.463012,20260320_182823__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_100,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,20,200,0.01,False,True,0.0001,False,0.949685534591195,0.9497198643599214,0.9499572711746086,0.3138934899144952,0.9527430879155018,0.9530820345394192,0.9495256166982924,0.949685534591195
-./logger_finetuning/20260320_182843__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50/accuracy_curve.png,20,./logger_finetuning/20260320_182843__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50/best_model.pt,./logger_finetuning/20260320_182843__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50/confusion_matrix.png,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,4,50,0,42,True,./hand_dummy/data_finetune,64,True,"['go', 'stop', 'left', 'right', 'null']",5,True,True,False,True,64,"[112, 112]",True,20,0.9282296650717703,0.3185958590015377,No val loss improvement > 0.0001 for 20 consecutive epochs.,True,50,0.76,0.7203736686706543,0.9234449760765551,0.32911316055857964,./logger_finetuning/20260320_182843__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50/loss_curve.png,finetuning,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,freeze_all_except_classifier,"GestureCNNClassifier(
+./logger_finetuning/20260320_182843__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50/accuracy_curve.png,20,./logger_finetuning/20260320_182843__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50/best_model.pt,./logger_finetuning/20260320_182843__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50/confusion_matrix.png,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,4,50,0,42,True,./hand_dummy/data_finetune,64,True,"['go', 'stop', 'left', 'right', 'null']",5,True,True,False,True,64,"[112, 112]",True,20,0.9282296650717704,0.3185958590015377,No val loss improvement > 0.0001 for 20 consecutive epochs.,True,50,0.76,0.7203736686706543,0.9234449760765552,0.3291131605585796,./logger_finetuning/20260320_182843__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50/loss_curve.png,finetuning,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,freeze_all_except_classifier,"GestureCNNClassifier(
   (encoder): MultiModalEarlyFusionEncoder(
     (body_encoder): BodyEncoder(
       (net): Sequential(
@@ -250,4 +250,580 @@ acc_plot_path,best_epoch,checkpoint_path,cm_plot_path,data.BODY_LANDMARK_USED,da
     (2): Dropout(p=0.3, inplace=False)
     (3): Linear(in_features=128, out_features=5, bias=True)
   )
-)",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p01__ep_200__n_50__body+hand.pt,./logger_finetuning/20260320_182843__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50,./logger_finetuning/20260320_182843__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50,classifier_head_only,finetuning,2026-03-20T18:28:43.317781,20260320_182843__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,20,200,0.01,False,True,0.0001,False,0.9282296650717703,0.9267126833617251,0.9274701848252604,0.3185958590015377,0.9320438426821406,0.9329094672676063,0.9276964769647696,0.9282296650717703
+)",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p01__ep_200__n_50__body+hand.pt,./logger_finetuning/20260320_182843__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50,./logger_finetuning/20260320_182843__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50,classifier_head_only,finetuning,2026-03-20T18:28:43.317781,20260320_182843__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,20,200,0.01,False,True,0.0001,False,0.9282296650717704,0.9267126833617252,0.9274701848252604,0.3185958590015377,0.9320438426821406,0.9329094672676064,0.9276964769647696,0.9282296650717704
+./logger_finetuning/20260320_190835__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_5/accuracy_curve.png,14,./logger_finetuning/20260320_190835__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_5/best_model.pt,./logger_finetuning/20260320_190835__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_5/confusion_matrix.png,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,4,5,0,42,True,./hand_dummy/data_finetune,64,True,"['go', 'stop', 'left', 'right', 'null']",5,True,True,False,True,64,"[112, 112]",False,14,0.4763779527559055,1.932571281598309,,False,5,0.8,1.0964759826660155,0.468503937007874,1.9428626905510744,./logger_finetuning/20260320_190835__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_5/loss_curve.png,finetuning,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,freeze_all_except_classifier,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=16, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+    (hand_encoder): HandEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=42, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(64, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p0001__ep_15__n_5__body+hand.pt,./logger_finetuning/20260320_190835__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_5,./logger_finetuning/20260320_190835__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_5,top_level_ft_sweep,finetuning,2026-03-20T19:08:35.295989,20260320_190835__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_5,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,10,15,0.0001,False,True,0.0001,False,0.4763779527559055,0.4774600136705399,0.4737204858962007,1.932571281598309,0.4938855876249765,0.4890606177411185,0.4786666666666667,0.4763779527559055
+./logger_finetuning/20260320_190838__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_10/accuracy_curve.png,15,./logger_finetuning/20260320_190838__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_10/best_model.pt,./logger_finetuning/20260320_190838__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_10/confusion_matrix.png,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,4,10,0,42,True,./hand_dummy/data_finetune,64,True,"['go', 'stop', 'left', 'right', 'null']",5,True,True,False,True,64,"[112, 112]",False,15,0.4939759036144578,1.7145538737017467,,False,10,0.3,1.811817216873169,0.4939759036144578,1.7145538737017467,./logger_finetuning/20260320_190838__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_10/loss_curve.png,finetuning,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,freeze_all_except_classifier,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=16, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+    (hand_encoder): HandEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=42, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(64, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p0001__ep_15__n_10__body+hand.pt,./logger_finetuning/20260320_190838__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_10,./logger_finetuning/20260320_190838__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_10,top_level_ft_sweep,finetuning,2026-03-20T19:08:38.821404,20260320_190838__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_10,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,10,15,0.0001,False,True,0.0001,False,0.4939759036144578,0.4863223379352411,0.4824174528799479,1.7145538737017467,0.4901849197774495,0.4853542171980612,0.4964959568733153,0.4939759036144578
+./logger_finetuning/20260320_190842__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_20/accuracy_curve.png,14,./logger_finetuning/20260320_190842__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_20/best_model.pt,./logger_finetuning/20260320_190842__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_20/confusion_matrix.png,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,4,20,0,42,True,./hand_dummy/data_finetune,64,True,"['go', 'stop', 'left', 'right', 'null']",5,True,True,False,True,64,"[112, 112]",False,14,0.502092050209205,1.531724617196925,,False,20,0.2,2.2117537021636964,0.502092050209205,1.5349706711878837,./logger_finetuning/20260320_190842__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_20/loss_curve.png,finetuning,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,freeze_all_except_classifier,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=16, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+    (hand_encoder): HandEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=42, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(64, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p0001__ep_15__n_20__body+hand.pt,./logger_finetuning/20260320_190842__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_20,./logger_finetuning/20260320_190842__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_20,top_level_ft_sweep,finetuning,2026-03-20T19:08:42.311224,20260320_190842__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_20,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,10,15,0.0001,False,True,0.0001,False,0.502092050209205,0.494647025103416,0.4906114452148326,1.531724617196925,0.4975474525474525,0.4925307955642682,0.5046307884856069,0.502092050209205
+./logger_finetuning/20260320_190845__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_40/accuracy_curve.png,15,./logger_finetuning/20260320_190845__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_40/best_model.pt,./logger_finetuning/20260320_190845__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_40/confusion_matrix.png,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,4,40,0,42,True,./hand_dummy/data_finetune,64,True,"['go', 'stop', 'left', 'right', 'null']",5,True,True,False,True,64,"[112, 112]",False,15,0.4885844748858447,1.3445365517378942,,False,40,0.375,1.6478417694568634,0.4885844748858447,1.3445365517378942,./logger_finetuning/20260320_190845__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_40/loss_curve.png,finetuning,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,freeze_all_except_classifier,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=16, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+    (hand_encoder): HandEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=42, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(64, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p0001__ep_15__n_40__body+hand.pt,./logger_finetuning/20260320_190845__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_40,./logger_finetuning/20260320_190845__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_40,top_level_ft_sweep,finetuning,2026-03-20T19:08:45.980981,20260320_190845__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_40,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,10,15,0.0001,False,True,0.0001,False,0.4885844748858447,0.4808278774868822,0.476822591350838,1.3445365517378942,0.4829139688003715,0.4778346137009754,0.4909450766947055,0.4885844748858447
+./logger_finetuning/20260320_190849__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_80/accuracy_curve.png,14,./logger_finetuning/20260320_190849__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_80/best_model.pt,./logger_finetuning/20260320_190849__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_80/confusion_matrix.png,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,4,80,0,42,True,./hand_dummy/data_finetune,64,True,"['go', 'stop', 'left', 'right', 'null']",5,True,True,False,True,64,"[112, 112]",False,14,0.5251396648044693,1.1381684758143715,,False,80,0.5125,1.3411750018596649,0.5139664804469274,1.1594924224155576,./logger_finetuning/20260320_190849__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_80/loss_curve.png,finetuning,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,freeze_all_except_classifier,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=16, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+    (hand_encoder): HandEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=42, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(64, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p0001__ep_15__n_80__body+hand.pt,./logger_finetuning/20260320_190849__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_80,./logger_finetuning/20260320_190849__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_80,top_level_ft_sweep,finetuning,2026-03-20T19:08:49.643034,20260320_190849__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_80,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,10,15,0.0001,False,True,0.0001,False,0.5251396648044693,0.5100893521965748,0.50288065158883,1.1381684758143715,0.5,0.4921279837480954,0.5312781954887218,0.5251396648044693
+./logger_finetuning/20260320_190853__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_100/accuracy_curve.png,15,./logger_finetuning/20260320_190853__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_100/best_model.pt,./logger_finetuning/20260320_190853__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_100/confusion_matrix.png,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,4,100,0,42,True,./hand_dummy/data_finetune,64,True,"['go', 'stop', 'left', 'right', 'null']",5,True,True,False,True,64,"[112, 112]",False,15,0.5094339622641509,1.1026095896022126,,False,100,0.53,1.252601124048233,0.5094339622641509,1.1026095896022126,./logger_finetuning/20260320_190853__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_100/loss_curve.png,finetuning,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,freeze_all_except_classifier,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=16, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+    (hand_encoder): HandEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=42, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(64, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p0001__ep_15__n_100__body+hand.pt,./logger_finetuning/20260320_190853__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_100,./logger_finetuning/20260320_190853__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_100,top_level_ft_sweep,finetuning,2026-03-20T19:08:53.375424,20260320_190853__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_100,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,10,15,0.0001,False,True,0.0001,False,0.5094339622641509,0.5001095598715505,0.4919440845261937,1.1026095896022126,0.4955210306934445,0.4865142123112194,0.5163187855787477,0.5094339622641509
+./logger_finetuning/20260320_190857__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_150/accuracy_curve.png,15,./logger_finetuning/20260320_190857__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_150/best_model.pt,./logger_finetuning/20260320_190857__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_150/confusion_matrix.png,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,4,150,0,42,True,./hand_dummy/data_finetune,64,True,"['go', 'stop', 'left', 'right', 'null']",5,True,True,False,True,64,"[112, 112]",False,15,0.5045871559633027,1.0045955279551515,,False,150,0.5266666666666666,1.0977833112080893,0.5045871559633027,1.0045955279551515,./logger_finetuning/20260320_190857__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_150/loss_curve.png,finetuning,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,freeze_all_except_classifier,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=16, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+    (hand_encoder): HandEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=42, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(64, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p0001__ep_15__n_150__body+hand.pt,./logger_finetuning/20260320_190857__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_150,./logger_finetuning/20260320_190857__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_150,top_level_ft_sweep,finetuning,2026-03-20T19:08:57.074022,20260320_190857__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_150,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,10,15,0.0001,False,True,0.0001,False,0.5045871559633027,0.4927637721755369,0.4880052938606636,1.0045955279551515,0.514548865768378,0.5084208697992543,0.5085262563523433,0.5045871559633027
+./logger_finetuning/20260320_190901__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_200/accuracy_curve.png,15,./logger_finetuning/20260320_190901__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_200/best_model.pt,./logger_finetuning/20260320_190901__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_200/confusion_matrix.png,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,4,200,0,42,True,./hand_dummy/data_finetune,64,True,"['go', 'stop', 'left', 'right', 'null']",5,True,True,False,True,64,"[112, 112]",False,15,0.559322033898305,0.8266944824639013,,False,200,0.57,1.0185927647352218,0.559322033898305,0.8266944824639013,./logger_finetuning/20260320_190901__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_200/loss_curve.png,finetuning,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,freeze_all_except_classifier,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=16, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+    (hand_encoder): HandEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=42, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(64, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p0001__ep_15__n_200__body+hand.pt,./logger_finetuning/20260320_190901__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_200,./logger_finetuning/20260320_190901__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_200,top_level_ft_sweep,finetuning,2026-03-20T19:09:01.358276,20260320_190901__FT_CNN__lr_1e-04__ep_15__body+hand__top_level_ft_sweep__n_200,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,10,15,0.0001,False,True,0.0001,False,0.559322033898305,0.5304761904761904,0.5281678773204197,0.8266944824639013,0.5361024844720497,0.530661122223392,0.5590909090909091,0.559322033898305
+./logger_finetuning/20260320_190928__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_5/accuracy_curve.png,45,./logger_finetuning/20260320_190928__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_5/best_model.pt,./logger_finetuning/20260320_190928__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_5/confusion_matrix.png,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,4,5,0,42,True,./hand_dummy/data_finetune,64,True,"['go', 'stop', 'left', 'right', 'null']",5,True,True,False,True,64,"[112, 112]",True,45,0.7204724409448819,0.7563436395070684,No val loss improvement > 0.0001 for 20 consecutive epochs.,True,5,0.4,1.3102150440216065,0.7165354330708661,0.7830994298138957,./logger_finetuning/20260320_190928__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_5/loss_curve.png,finetuning,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,freeze_all_except_classifier,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=16, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+    (hand_encoder): HandEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=42, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(64, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p01__ep_200__n_5__body+hand.pt,./logger_finetuning/20260320_190928__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_5,./logger_finetuning/20260320_190928__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_5,top_level_ft_sweep,finetuning,2026-03-20T19:09:28.646511,20260320_190928__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_5,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,20,200,0.01,False,True,0.0001,False,0.7204724409448819,0.6798176288908069,0.6702169644767232,0.7563436395070684,0.7670629362856254,0.7654818926695788,0.7314074074074073,0.7204724409448819
+./logger_finetuning/20260320_190933__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_10/accuracy_curve.png,23,./logger_finetuning/20260320_190933__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_10/best_model.pt,./logger_finetuning/20260320_190933__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_10/confusion_matrix.png,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,4,10,0,42,True,./hand_dummy/data_finetune,64,True,"['go', 'stop', 'left', 'right', 'null']",5,True,True,False,True,64,"[112, 112]",True,23,0.8112449799196787,0.6542772389200318,No val loss improvement > 0.0001 for 20 consecutive epochs.,True,10,0.8,0.5295771777629852,0.8353413654618473,0.8321716437886757,./logger_finetuning/20260320_190933__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_10/loss_curve.png,finetuning,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,freeze_all_except_classifier,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=16, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+    (hand_encoder): HandEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=42, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(64, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p01__ep_200__n_10__body+hand.pt,./logger_finetuning/20260320_190933__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_10,./logger_finetuning/20260320_190933__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_10,top_level_ft_sweep,finetuning,2026-03-20T19:09:33.840233,20260320_190933__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_10,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,20,200,0.01,False,True,0.0001,False,0.8112449799196787,0.8123979591836734,0.8110609103078982,0.6542772389200318,0.8466496958191311,0.8461244555388573,0.8137081247593377,0.8112449799196787
+./logger_finetuning/20260320_190938__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_20/accuracy_curve.png,17,./logger_finetuning/20260320_190938__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_20/best_model.pt,./logger_finetuning/20260320_190938__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_20/confusion_matrix.png,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,4,20,0,42,True,./hand_dummy/data_finetune,64,True,"['go', 'stop', 'left', 'right', 'null']",5,True,True,False,True,64,"[112, 112]",True,17,0.8577405857740585,0.5121535507720509,No val loss improvement > 0.0001 for 20 consecutive epochs.,True,20,0.7,0.6351096749305725,0.8117154811715481,0.6142256953617145,./logger_finetuning/20260320_190938__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_20/loss_curve.png,finetuning,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,freeze_all_except_classifier,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=16, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+    (hand_encoder): HandEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=42, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(64, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p01__ep_200__n_20__body+hand.pt,./logger_finetuning/20260320_190938__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_20,./logger_finetuning/20260320_190938__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_20,top_level_ft_sweep,finetuning,2026-03-20T19:09:38.718449,20260320_190938__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_20,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,20,200,0.01,False,True,0.0001,False,0.8577405857740585,0.8595192223230755,0.8581292870245353,0.5121535507720509,0.8933006535947712,0.8945941696064758,0.8613266583229036,0.8577405857740585
+./logger_finetuning/20260320_190947__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_40/accuracy_curve.png,68,./logger_finetuning/20260320_190947__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_40/best_model.pt,./logger_finetuning/20260320_190947__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_40/confusion_matrix.png,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,4,40,0,42,True,./hand_dummy/data_finetune,64,True,"['go', 'stop', 'left', 'right', 'null']",5,True,True,False,True,64,"[112, 112]",True,68,0.8812785388127854,0.3921947304380538,No val loss improvement > 0.0001 for 20 consecutive epochs.,True,40,0.725,0.552550558745861,0.8812785388127854,0.3973323224478116,./logger_finetuning/20260320_190947__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_40/loss_curve.png,finetuning,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,freeze_all_except_classifier,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=16, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+    (hand_encoder): HandEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=42, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(64, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p01__ep_200__n_40__body+hand.pt,./logger_finetuning/20260320_190947__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_40,./logger_finetuning/20260320_190947__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_40,top_level_ft_sweep,finetuning,2026-03-20T19:09:47.192874,20260320_190947__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_40,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,20,200,0.01,False,True,0.0001,False,0.8812785388127854,0.8831769612386197,0.8824499572703509,0.3921947304380538,0.9008077163814868,0.9021120909173908,0.8838198911429986,0.8812785388127854
+./logger_finetuning/20260320_190954__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_80/accuracy_curve.png,36,./logger_finetuning/20260320_190954__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_80/best_model.pt,./logger_finetuning/20260320_190954__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_80/confusion_matrix.png,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,4,80,0,42,True,./hand_dummy/data_finetune,64,True,"['go', 'stop', 'left', 'right', 'null']",5,True,True,False,True,64,"[112, 112]",True,36,0.9385474860335196,0.3018771747137581,No val loss improvement > 0.0001 for 20 consecutive epochs.,True,80,0.7625,0.5462322071194649,0.8994413407821229,0.3311843104951874,./logger_finetuning/20260320_190954__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_80/loss_curve.png,finetuning,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,freeze_all_except_classifier,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=16, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+    (hand_encoder): HandEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=42, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(64, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p01__ep_200__n_80__body+hand.pt,./logger_finetuning/20260320_190954__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_80,./logger_finetuning/20260320_190954__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_80,top_level_ft_sweep,finetuning,2026-03-20T19:09:54.237569,20260320_190954__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_80,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,20,200,0.01,False,True,0.0001,False,0.9385474860335196,0.939488183049827,0.9391338133053906,0.3018771747137581,0.9464935064935066,0.9461945875353696,0.9389473684210524,0.9385474860335196
+./logger_finetuning/20260320_191000__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_100/accuracy_curve.png,30,./logger_finetuning/20260320_191000__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_100/best_model.pt,./logger_finetuning/20260320_191000__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_100/confusion_matrix.png,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,4,100,0,42,True,./hand_dummy/data_finetune,64,True,"['go', 'stop', 'left', 'right', 'null']",5,True,True,False,True,64,"[112, 112]",True,30,0.949685534591195,0.3103671678863231,No val loss improvement > 0.0001 for 20 consecutive epochs.,True,100,0.79,0.7189107596874237,0.9371069182389936,0.3121237355817414,./logger_finetuning/20260320_191000__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_100/loss_curve.png,finetuning,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,freeze_all_except_classifier,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=16, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+    (hand_encoder): HandEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=42, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(64, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p01__ep_200__n_100__body+hand.pt,./logger_finetuning/20260320_191000__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_100,./logger_finetuning/20260320_191000__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_100,top_level_ft_sweep,finetuning,2026-03-20T19:10:00.594648,20260320_191000__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_100,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,20,200,0.01,False,True,0.0001,False,0.949685534591195,0.9488567768678308,0.949491828715088,0.3103671678863231,0.9506513409961684,0.9511940046748112,0.9489563567362428,0.949685534591195
+./logger_finetuning/20260320_191008__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_150/accuracy_curve.png,34,./logger_finetuning/20260320_191008__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_150/best_model.pt,./logger_finetuning/20260320_191008__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_150/confusion_matrix.png,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,4,150,0,42,True,./hand_dummy/data_finetune,64,True,"['go', 'stop', 'left', 'right', 'null']",5,True,True,False,True,64,"[112, 112]",True,34,0.8899082568807339,0.3081937849248216,No val loss improvement > 0.0001 for 20 consecutive epochs.,True,150,0.7733333333333333,0.6425374073783556,0.8715596330275229,0.360346416062716,./logger_finetuning/20260320_191008__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_150/loss_curve.png,finetuning,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,freeze_all_except_classifier,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=16, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+    (hand_encoder): HandEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=42, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(64, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p01__ep_200__n_150__body+hand.pt,./logger_finetuning/20260320_191008__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_150,./logger_finetuning/20260320_191008__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_150,top_level_ft_sweep,finetuning,2026-03-20T19:10:08.235072,20260320_191008__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_150,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,20,200,0.01,False,True,0.0001,False,0.8899082568807339,0.8833333333333334,0.8864424057084608,0.3081937849248216,0.8925641025641026,0.8950952717007763,0.8865424430641822,0.8899082568807339
+./logger_finetuning/20260320_191017__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_200/accuracy_curve.png,44,./logger_finetuning/20260320_191017__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_200/best_model.pt,./logger_finetuning/20260320_191017__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_200/confusion_matrix.png,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,4,200,0,42,True,./hand_dummy/data_finetune,64,True,"['go', 'stop', 'left', 'right', 'null']",5,True,True,False,True,64,"[112, 112]",True,44,0.8983050847457628,0.26700984017323637,No val loss improvement > 0.0001 for 20 consecutive epochs.,True,200,0.8,0.5662554737739265,0.9152542372881356,0.30254488223690096,./logger_finetuning/20260320_191017__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_200/loss_curve.png,finetuning,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,freeze_all_except_classifier,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=16, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+    (hand_encoder): HandEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=42, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(64, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p01__ep_200__n_200__body+hand.pt,./logger_finetuning/20260320_191017__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_200,./logger_finetuning/20260320_191017__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_200,top_level_ft_sweep,finetuning,2026-03-20T19:10:17.582468,20260320_191017__FT_CNN__lr_0p01__ep_200__body+hand__top_level_ft_sweep__n_200,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,20,200,0.01,False,True,0.0001,False,0.8983050847457628,0.8953761214630779,0.8976383478962697,0.26700984017323637,0.9018181818181817,0.9035439137134051,0.8954545454545455,0.8983050847457628
