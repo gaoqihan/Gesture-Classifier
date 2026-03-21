@@ -1,0 +1,2 @@
+run_name,mode,finetune_train_loss_last,finetune_train_acc_last,finetune_val_loss_last,finetune_val_acc_last,val_loss,val_acc,val_precision_macro,val_recall_macro,val_f1_macro,val_precision_weighted,val_recall_weighted,val_f1_weighted,finetune_num_samples,early_stopped,best_epoch
+20260320_182609__FT_CNN__lr_0p01__ep_0__body+hand__classifier_head_only__inference_only,inference_only,,,,,7.891992247002756,0.1752136752136752,0.03660714285714285,0.1782608695652174,0.06074074074074074,0.03598137973137973,0.1752136752136752,0.059702437480215254,25,False,-1

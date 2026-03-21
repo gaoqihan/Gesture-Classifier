@@ -1,5 +1,5 @@
-run_name,run_dir,checkpoint_path,loss_plot_path,acc_plot_path,cm_plot_path,finetune_train_loss_last,finetune_train_acc_last,finetune_val_loss_last,finetune_val_acc_last,val_loss,val_acc,val_precision_macro,val_recall_macro,val_f1_macro,val_precision_weighted,val_recall_weighted,val_f1_weighted,finetune_num_samples,run_info.timestamp,run_info.run_note,run_info.run_type,source_pretrained_run.pretrained_run_dir,source_pretrained_run.pretrained_checkpoint_path,source_pretrained_run.pretrained_model_type,data.FINETUNING_DATA_ROOT,data.LABELS,data.NUM_CLASSES,data.VIDEO_INPUT_ENABLED,data.BODY_POSE_INPUT_ENABLED,data.HAND_POSE_INPUT_ENABLED,data.BODY_LANDMARK_USED,data.VIDEO_SIZE,data.VIDEO_NORMALIZE,data.VIDEO_PAD_LENGTH,data.BODY_PAD_LENGTH,data.HAND_PAD_LENGTH,data.TRUNCATE_IF_LONGER,data.REQUIRE_ALL_THREE_COMPONENTS,data.FINETUNE_NUM_SAMPLES,data.FINETUNE_RANDOM_SEED,data.FINETUNE_STRATIFY,data.FINETUNE_BATCH_SIZE,data.FINETUNE_NUM_WORKERS,model.MODEL_TYPE,model.VIDEO_FEATURE_DIM,model.USE_BODY_MLP,model.BODY_FEATURE_DIM,model.USE_HAND_MLP,model.HAND_FEATURE_DIM,model.LSTM_HIDDEN_DIM,model.LSTM_NUM_LAYERS,model.LSTM_DROPOUT,model.LSTM_BIDIRECTIONAL,model.CNN_HIDDEN_DIM,model.CNN_DROPOUT,model.CLASSIFIER_HIDDEN_DIM,model.DROPOUT,model.finetune_strategy,model.model_structure,model.total_parameters,model.trainable_parameters,training.DEVICE,training.FINETUNE_EPOCHS,training.FINETUNE_LEARNING_RATE,training.FINETUNE_WEIGHT_DECAY,training.FINETUNE_USE_CLASS_WEIGHTS,training.FINETUNE_USE_LR_SCHEDULER,paths.run_dir,paths.best_model_source_path
-20260320_171334__FT_CNN__lr_1e-04__ep_15__body+hand__classifier_head_only__n_40,./logger_finetuning/20260320_171334__FT_CNN__lr_1e-04__ep_15__body+hand__classifier_head_only__n_40,./logger_finetuning/20260320_171334__FT_CNN__lr_1e-04__ep_15__body+hand__classifier_head_only__n_40/best_model.pt,./logger_finetuning/20260320_171334__FT_CNN__lr_1e-04__ep_15__body+hand__classifier_head_only__n_40/loss_curve.png,./logger_finetuning/20260320_171334__FT_CNN__lr_1e-04__ep_15__body+hand__classifier_head_only__n_40/accuracy_curve.png,./logger_finetuning/20260320_171334__FT_CNN__lr_1e-04__ep_15__body+hand__classifier_head_only__n_40/confusion_matrix.png,0.36399302519857885,0.95,0.05758830334626786,0.9891304347826086,0.05476543657866347,0.9891304347826086,0.9888257575757576,0.9893602722489133,0.9889410531980822,0.9895256916996048,0.9891304347826086,0.9891845421185165,40,2026-03-20T17:13:34.896654,classifier_head_only,finetuning,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./hand_dummy/finetune,"['go', 'stop', 'left', 'right', 'null']",5,False,True,True,"[5, 6, 7, 8, 9, 10, 11, 12]","[112, 112]",True,64,64,64,True,True,40,42,True,4,0,CNN,64,True,32,True,32,128,2,0.2,False,128,0.2,128,0.3,freeze_all_except_classifier,"GestureCNNClassifier(
+acc_plot_path,best_epoch,checkpoint_path,cm_plot_path,data.BODY_LANDMARK_USED,data.BODY_PAD_LENGTH,data.BODY_POSE_INPUT_ENABLED,data.FINETUNE_BATCH_SIZE,data.FINETUNE_NUM_SAMPLES,data.FINETUNE_NUM_WORKERS,data.FINETUNE_RANDOM_SEED,data.FINETUNE_STRATIFY,data.FINETUNING_DATA_ROOT,data.HAND_PAD_LENGTH,data.HAND_POSE_INPUT_ENABLED,data.LABELS,data.NUM_CLASSES,data.REQUIRE_ALL_THREE_COMPONENTS,data.TRUNCATE_IF_LONGER,data.VIDEO_INPUT_ENABLED,data.VIDEO_NORMALIZE,data.VIDEO_PAD_LENGTH,data.VIDEO_SIZE,early_stopped,early_stopping_result.best_epoch,early_stopping_result.best_val_acc,early_stopping_result.best_val_loss,early_stopping_result.early_stop_reason,early_stopping_result.early_stopped,finetune_num_samples,finetune_train_acc_last,finetune_train_loss_last,finetune_val_acc_last,finetune_val_loss_last,loss_plot_path,mode,model.BODY_FEATURE_DIM,model.CLASSIFIER_HIDDEN_DIM,model.CNN_DROPOUT,model.CNN_HIDDEN_DIM,model.DROPOUT,model.HAND_FEATURE_DIM,model.LSTM_BIDIRECTIONAL,model.LSTM_DROPOUT,model.LSTM_HIDDEN_DIM,model.LSTM_NUM_LAYERS,model.MODEL_TYPE,model.USE_BODY_MLP,model.USE_HAND_MLP,model.VIDEO_FEATURE_DIM,model.finetune_strategy,model.model_structure,model.total_parameters,model.trainable_parameters,paths.best_model_source_path,paths.run_dir,run_dir,run_info.run_note,run_info.run_type,run_info.timestamp,run_name,source_pretrained_run.pretrained_checkpoint_path,source_pretrained_run.pretrained_model_type,source_pretrained_run.pretrained_run_dir,training.DEVICE,training.EARLY_STOPPING_MIN_DELTA,training.EARLY_STOPPING_PATIENCE,training.FINETUNE_EPOCHS,training.FINETUNE_LEARNING_RATE,training.FINETUNE_USE_CLASS_WEIGHTS,training.FINETUNE_USE_LR_SCHEDULER,training.FINETUNE_WEIGHT_DECAY,training.INFERENCE_ONLY,val_acc,val_f1_macro,val_f1_weighted,val_loss,val_precision_macro,val_precision_weighted,val_recall_macro,val_recall_weighted
+./logger_finetuning/20260320_182507__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_25/accuracy_curve.png,8,./logger_finetuning/20260320_182507__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_25/best_model.pt,./logger_finetuning/20260320_182507__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_25/confusion_matrix.png,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,4,25,0,42,True,./hand_dummy/data_finetune,64,True,"['go', 'stop', 'left', 'right', 'null']",5,True,True,False,True,64,"[112, 112]",True,8,0.8290598290598291,0.5646116748834268,No val loss improvement > 0.0001 for 10 consecutive epochs.,True,25,0.8,0.4984467840194702,0.8162393162393162,0.6351542989285583,./logger_finetuning/20260320_182507__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_25/loss_curve.png,finetuning,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,freeze_all_except_classifier,"GestureCNNClassifier(
   (encoder): MultiModalEarlyFusionEncoder(
     (body_encoder): BodyEncoder(
       (net): Sequential(
@@ -34,4 +34,220 @@ run_name,run_dir,checkpoint_path,loss_plot_path,acc_plot_path,cm_plot_path,finet
     (2): Dropout(p=0.3, inplace=False)
     (3): Linear(in_features=128, out_features=5, bias=True)
   )
-)",143109,17157,cuda,15,0.0001,0.0001,False,True,./logger_finetuning/20260320_171334__FT_CNN__lr_1e-04__ep_15__body+hand__classifier_head_only__n_40,./logger_finetuning/best_finetune__CNN__lr_0p0001__ep_15__n_40__body+hand.pt
+)",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p01__ep_200__n_25__body+hand.pt,./logger_finetuning/20260320_182507__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_25,./logger_finetuning/20260320_182507__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_25,classifier_head_only,finetuning,2026-03-20T18:25:07.606187,20260320_182507__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_25,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,10,200,0.01,False,True,0.0001,False,0.8290598290598291,0.8060410388864974,0.8085103382133085,0.5646116748834268,0.8737425404944588,0.8748952572481985,0.8267826086956521,0.8290598290598291
+./logger_finetuning/20260320_182609__FT_CNN__lr_0p01__ep_0__body+hand__classifier_head_only__inference_only/accuracy_curve.png,-1,./logger_finetuning/20260320_182609__FT_CNN__lr_0p01__ep_0__body+hand__classifier_head_only__inference_only/best_model.pt,./logger_finetuning/20260320_182609__FT_CNN__lr_0p01__ep_0__body+hand__classifier_head_only__inference_only/confusion_matrix.png,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,4,25,0,42,True,./hand_dummy/data_finetune,64,True,"['go', 'stop', 'left', 'right', 'null']",5,True,True,False,True,64,"[112, 112]",False,-1,,,,False,25,,,,,./logger_finetuning/20260320_182609__FT_CNN__lr_0p01__ep_0__body+hand__classifier_head_only__inference_only/loss_curve.png,inference_only,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,freeze_all_except_classifier,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=16, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+    (hand_encoder): HandEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=42, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(64, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p01__ep_200__n_25__body+hand.pt,./logger_finetuning/20260320_182609__FT_CNN__lr_0p01__ep_0__body+hand__classifier_head_only__inference_only,./logger_finetuning/20260320_182609__FT_CNN__lr_0p01__ep_0__body+hand__classifier_head_only__inference_only,classifier_head_only,inference_only,2026-03-20T18:26:09.761905,20260320_182609__FT_CNN__lr_0p01__ep_0__body+hand__classifier_head_only__inference_only,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,10,200,0.01,False,True,0.0001,True,0.1752136752136752,0.0607407407407407,0.0597024374802152,7.891992247002756,0.0366071428571428,0.0359813797313797,0.1782608695652174,0.1752136752136752
+./logger_finetuning/20260320_182636__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_40/accuracy_curve.png,18,./logger_finetuning/20260320_182636__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_40/best_model.pt,./logger_finetuning/20260320_182636__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_40/confusion_matrix.png,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,4,40,0,42,True,./hand_dummy/data_finetune,64,True,"['go', 'stop', 'left', 'right', 'null']",5,True,True,False,True,64,"[112, 112]",True,18,0.8538812785388128,0.4212892665506498,No val loss improvement > 0.0001 for 10 consecutive epochs.,True,40,0.675,0.7252960205078125,0.8447488584474886,0.4691893387943098,./logger_finetuning/20260320_182636__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_40/loss_curve.png,finetuning,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,freeze_all_except_classifier,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=16, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+    (hand_encoder): HandEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=42, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(64, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p01__ep_200__n_40__body+hand.pt,./logger_finetuning/20260320_182636__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_40,./logger_finetuning/20260320_182636__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_40,classifier_head_only,finetuning,2026-03-20T18:26:36.863210,20260320_182636__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_40,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,10,200,0.01,False,True,0.0001,False,0.8538812785388128,0.8561306340718104,0.8542514764311703,0.4212892665506498,0.8870712076682226,0.8885250060060937,0.8582879762493816,0.8538812785388128
+./logger_finetuning/20260320_182708__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50/accuracy_curve.png,15,./logger_finetuning/20260320_182708__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50/best_model.pt,./logger_finetuning/20260320_182708__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50/confusion_matrix.png,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,4,50,0,42,True,./hand_dummy/data_finetune,64,True,"['go', 'stop', 'left', 'right', 'null']",5,True,True,False,True,64,"[112, 112]",True,15,0.9138755980861244,0.3891678782242337,No val loss improvement > 0.0001 for 10 consecutive epochs.,True,50,0.66,0.6619139182567596,0.861244019138756,0.3905418657087253,./logger_finetuning/20260320_182708__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50/loss_curve.png,finetuning,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,freeze_all_except_classifier,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=16, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+    (hand_encoder): HandEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=42, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(64, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p01__ep_200__n_50__body+hand.pt,./logger_finetuning/20260320_182708__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50,./logger_finetuning/20260320_182708__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50,classifier_head_only,finetuning,2026-03-20T18:27:08.628407,20260320_182708__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,10,200,0.01,False,True,0.0001,False,0.9138755980861244,0.913320601032875,0.9137313571603922,0.3891678782242337,0.9157055966189336,0.9156900563395524,0.9130623306233062,0.9138755980861244
+./logger_finetuning/20260320_182730__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_100/accuracy_curve.png,37,./logger_finetuning/20260320_182730__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_100/best_model.pt,./logger_finetuning/20260320_182730__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_100/confusion_matrix.png,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,4,100,0,42,True,./hand_dummy/data_finetune,64,True,"['go', 'stop', 'left', 'right', 'null']",5,True,True,False,True,64,"[112, 112]",True,37,0.9182389937106918,0.3178538558243206,No val loss improvement > 0.0001 for 10 consecutive epochs.,True,100,0.75,0.6958803761005402,0.9308176100628932,0.3216076275134611,./logger_finetuning/20260320_182730__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_100/loss_curve.png,finetuning,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,freeze_all_except_classifier,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=16, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+    (hand_encoder): HandEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=42, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(64, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p01__ep_200__n_100__body+hand.pt,./logger_finetuning/20260320_182730__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_100,./logger_finetuning/20260320_182730__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_100,classifier_head_only,finetuning,2026-03-20T18:27:30.413929,20260320_182730__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_100,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,10,200,0.01,False,True,0.0001,False,0.9182389937106918,0.9166566766566768,0.9173434531925097,0.3178538558243206,0.9258020050125314,0.9266755725792468,0.9178368121442124,0.9182389937106918
+./logger_finetuning/20260320_182823__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_100/accuracy_curve.png,48,./logger_finetuning/20260320_182823__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_100/best_model.pt,./logger_finetuning/20260320_182823__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_100/confusion_matrix.png,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,4,100,0,42,True,./hand_dummy/data_finetune,64,True,"['go', 'stop', 'left', 'right', 'null']",5,True,True,False,True,64,"[112, 112]",True,48,0.949685534591195,0.3138934899144952,No val loss improvement > 0.0001 for 20 consecutive epochs.,True,100,0.72,0.7294028621912002,0.9371069182389936,0.3246322656577488,./logger_finetuning/20260320_182823__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_100/loss_curve.png,finetuning,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,freeze_all_except_classifier,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=16, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+    (hand_encoder): HandEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=42, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(64, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p01__ep_200__n_100__body+hand.pt,./logger_finetuning/20260320_182823__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_100,./logger_finetuning/20260320_182823__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_100,classifier_head_only,finetuning,2026-03-20T18:28:23.463012,20260320_182823__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_100,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,20,200,0.01,False,True,0.0001,False,0.949685534591195,0.9497198643599214,0.9499572711746086,0.3138934899144952,0.9527430879155018,0.9530820345394192,0.9495256166982924,0.949685534591195
+./logger_finetuning/20260320_182843__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50/accuracy_curve.png,20,./logger_finetuning/20260320_182843__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50/best_model.pt,./logger_finetuning/20260320_182843__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50/confusion_matrix.png,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,4,50,0,42,True,./hand_dummy/data_finetune,64,True,"['go', 'stop', 'left', 'right', 'null']",5,True,True,False,True,64,"[112, 112]",True,20,0.9282296650717703,0.3185958590015377,No val loss improvement > 0.0001 for 20 consecutive epochs.,True,50,0.76,0.7203736686706543,0.9234449760765551,0.32911316055857964,./logger_finetuning/20260320_182843__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50/loss_curve.png,finetuning,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,freeze_all_except_classifier,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=16, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+    (hand_encoder): HandEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=42, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(64, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",143109,17157,./logger_finetuning/best_finetune__CNN__lr_0p01__ep_200__n_50__body+hand.pt,./logger_finetuning/20260320_182843__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50,./logger_finetuning/20260320_182843__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50,classifier_head_only,finetuning,2026-03-20T18:28:43.317781,20260320_182843__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_50,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,CNN,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,cuda,0.0001,20,200,0.01,False,True,0.0001,False,0.9282296650717703,0.9267126833617251,0.9274701848252604,0.3185958590015377,0.9320438426821406,0.9329094672676063,0.9276964769647696,0.9282296650717703

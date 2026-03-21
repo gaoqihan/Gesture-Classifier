@@ -1,0 +1,19 @@
+{
+  "run_name": "20260320_182507__FT_CNN__lr_0p01__ep_200__body+hand__classifier_head_only__n_25",
+  "mode": "finetuning",
+  "finetune_train_loss_last": 0.49844678401947023,
+  "finetune_train_acc_last": 0.8,
+  "finetune_val_loss_last": 0.6351542989285583,
+  "finetune_val_acc_last": 0.8162393162393162,
+  "val_loss": 0.5646116748834268,
+  "val_acc": 0.8290598290598291,
+  "val_precision_macro": 0.8737425404944588,
+  "val_recall_macro": 0.8267826086956521,
+  "val_f1_macro": 0.8060410388864974,
+  "val_precision_weighted": 0.8748952572481985,
+  "val_recall_weighted": 0.8290598290598291,
+  "val_f1_weighted": 0.8085103382133085,
+  "finetune_num_samples": 25,
+  "early_stopped": true,
+  "best_epoch": 8
+}
