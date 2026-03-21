@@ -1,0 +1,15 @@
+{
+  "run_name": "20260320_161205__CNN__lr_3e-04__ep_400__body+hand__early_fusion",
+  "train_loss_last": 0.30118504738739366,
+  "train_acc_last": 0.9426934097421203,
+  "val_loss_last": 0.2288568381468455,
+  "val_acc_last": 0.9733333333333334,
+  "test_loss": 0.1896096585612548,
+  "test_acc": 0.9605263157894737,
+  "test_precision_macro": 0.9608333333333334,
+  "test_recall_macro": 0.9625,
+  "test_f1_macro": 0.9599078341013826,
+  "test_precision_weighted": 0.9648574561403509,
+  "test_recall_weighted": 0.9605263157894737,
+  "test_f1_weighted": 0.9610417171962163
+}

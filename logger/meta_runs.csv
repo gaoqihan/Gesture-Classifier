@@ -1,4 +1,4 @@
-acc_plot_path,checkpoint_path,cm_plot_path,data.BATCH_SIZE,data.BODY_LANDMARK_USED,data.BODY_PAD_LENGTH,data.BODY_POSE_INPUT_ENABLED,data.DATA_ROOT,data.HAND_PAD_LENGTH,data.HAND_POSE_INPUT_ENABLED,data.LABELS,data.NUM_CLASSES,data.NUM_WORKERS,data.RANDOM_SEED,data.REQUIRE_ALL_THREE_COMPONENTS,data.STRATIFY_SPLIT,data.TEST_RATIO,data.TRAIN_RATIO,data.TRUNCATE_IF_LONGER,data.VAL_RATIO,data.VERBOSE_SCREENING,data.VIDEO_INPUT_ENABLED,data.VIDEO_NORMALIZE,data.VIDEO_PAD_LENGTH,data.VIDEO_SIZE,loss_plot_path,model.BODY_FEATURE_DIM,model.CLASSIFIER_HIDDEN_DIM,model.CNN_DROPOUT,model.CNN_HIDDEN_DIM,model.DROPOUT,model.HAND_FEATURE_DIM,model.LSTM_BIDIRECTIONAL,model.LSTM_DROPOUT,model.LSTM_HIDDEN_DIM,model.LSTM_NUM_LAYERS,model.MODEL_TYPE,model.USE_BODY_MLP,model.USE_HAND_MLP,model.VIDEO_FEATURE_DIM,model.model_structure,model.total_parameters,model.trainable_parameters,paths.best_model_source_path,paths.run_dir,run_dir,run_info.run_note,run_info.timestamp,run_name,test_acc,test_f1_macro,test_f1_weighted,test_loss,test_precision_macro,test_precision_weighted,test_recall_macro,test_recall_weighted,train_acc_last,train_loss_last,training.DEVICE,training.EPOCHS,training.LEARNING_RATE,training.USE_CLASS_WEIGHTS,training.USE_LR_SCHEDULER,training.WEIGHT_DECAY,val_acc_last,val_loss_last
+acc_plot_path,checkpoint_path,cm_plot_path,data.BATCH_SIZE,data.BODY_LANDMARK_USED,data.BODY_PAD_LENGTH,data.BODY_POSE_INPUT_ENABLED,data.DATA_ROOT,data.HAND_PAD_LENGTH,data.HAND_POSE_INPUT_ENABLED,data.LABELS,data.NUM_CLASSES,data.NUM_WORKERS,data.RANDOM_SEED,data.REQUIRE_ALL_THREE_COMPONENTS,data.STRATIFY_SPLIT,data.TEST_RATIO,data.TRAIN_RATIO,data.TRUNCATE_IF_LONGER,data.VAL_RATIO,data.VERBOSE_SCREENING,data.VIDEO_INPUT_ENABLED,data.VIDEO_NORMALIZE,data.VIDEO_PAD_LENGTH,data.VIDEO_SIZE,loss_plot_path,model.BODY_FEATURE_DIM,model.CLASSIFIER_HIDDEN_DIM,model.CNN_DROPOUT,model.CNN_HIDDEN_DIM,model.DROPOUT,model.HAND_FEATURE_DIM,model.LSTM_BIDIRECTIONAL,model.LSTM_DROPOUT,model.LSTM_HIDDEN_DIM,model.LSTM_NUM_LAYERS,model.MODEL_TYPE,model.USE_BODY_MLP,model.USE_HAND_MLP,model.VIDEO_FEATURE_DIM,model.model_structure,model.total_parameters,model.trainable_parameters,paths.best_model_source_path,paths.run_dir,run_dir,run_info.run_note,run_info.timestamp,run_name,test_acc,test_f1_macro,test_f1_weighted,test_loss,test_precision_macro,test_precision_weighted,test_recall_macro,test_recall_weighted,train_acc_last,train_loss_last,training.DEVICE,training.EARLY_STOPPING_MIN_DELTA,training.EARLY_STOPPING_PATIENCE,training.EPOCHS,training.LEARNING_RATE,training.USE_CLASS_WEIGHTS,training.USE_LR_SCHEDULER,training.WEIGHT_DECAY,val_acc_last,val_loss_last
 ./logger/20260320_152516__CNN__lr_1e-04__ep_400__hand__early_fusion/accuracy_curve.png,./logger/20260320_152516__CNN__lr_1e-04__ep_400__hand__early_fusion/best_model.pt,./logger/20260320_152516__CNN__lr_1e-04__ep_400__hand__early_fusion/confusion_matrix.png,16,"[5, 6, 7, 8, 9, 10, 11, 12]",64,False,hand_dummy/data,64,True,"['go', 'stop', 'left', 'right', 'null']",5,0,42,True,True,0.15,0.7,True,0.15,True,False,True,64,"[112, 112]",./logger/20260320_152516__CNN__lr_1e-04__ep_400__hand__early_fusion/loss_curve.png,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,"GestureCNNClassifier(
   (encoder): MultiModalEarlyFusionEncoder(
     (hand_encoder): HandEncoder(
@@ -28,7 +28,7 @@ acc_plot_path,checkpoint_path,cm_plot_path,data.BATCH_SIZE,data.BODY_LANDMARK_US
     (2): Dropout(p=0.3, inplace=False)
     (3): Linear(in_features=128, out_features=5, bias=True)
   )
-)",130277,130277,./gesture_checkpoints/best_cnn_early_fusion.pt,./logger/20260320_152516__CNN__lr_1e-04__ep_400__hand__early_fusion,./logger/20260320_152516__CNN__lr_1e-04__ep_400__hand__early_fusion,early_fusion,2026-03-20T15:25:16.250490,20260320_152516__CNN__lr_1e-04__ep_400__hand__early_fusion,0.9473684210526316,0.9468356374807988,0.9477514350392108,0.1597929463574761,0.9559210526315788,0.9544234764542936,0.9442307692307692,0.9473684210526316,0.994269340974212,0.0677384263101997,cuda,400,0.0001,False,True,0.0001,0.96,0.1584037845830122
+)",130277,130277,./gesture_checkpoints/best_cnn_early_fusion.pt,./logger/20260320_152516__CNN__lr_1e-04__ep_400__hand__early_fusion,./logger/20260320_152516__CNN__lr_1e-04__ep_400__hand__early_fusion,early_fusion,2026-03-20T15:25:16.250490,20260320_152516__CNN__lr_1e-04__ep_400__hand__early_fusion,0.9473684210526316,0.9468356374807988,0.9477514350392108,0.1597929463574761,0.9559210526315788,0.9544234764542936,0.9442307692307692,0.9473684210526316,0.994269340974212,0.0677384263101997,cuda,,,400,0.0001,False,True,0.0001,0.96,0.1584037845830122
 ./logger/20260320_152647__CNN__lr_1e-04__ep_400__body__early_fusion/accuracy_curve.png,./logger/20260320_152647__CNN__lr_1e-04__ep_400__body__early_fusion/best_model.pt,./logger/20260320_152647__CNN__lr_1e-04__ep_400__body__early_fusion/confusion_matrix.png,16,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,hand_dummy/data,64,False,"['go', 'stop', 'left', 'right', 'null']",5,0,42,True,True,0.15,0.7,True,0.15,True,False,True,64,"[112, 112]",./logger/20260320_152647__CNN__lr_1e-04__ep_400__body__early_fusion/loss_curve.png,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,"GestureCNNClassifier(
   (encoder): MultiModalEarlyFusionEncoder(
     (body_encoder): BodyEncoder(
@@ -58,7 +58,7 @@ acc_plot_path,checkpoint_path,cm_plot_path,data.BATCH_SIZE,data.BODY_LANDMARK_US
     (2): Dropout(p=0.3, inplace=False)
     (3): Linear(in_features=128, out_features=5, bias=True)
   )
-)",129445,129445,./gesture_checkpoints/best_cnn_early_fusion.pt,./logger/20260320_152647__CNN__lr_1e-04__ep_400__body__early_fusion,./logger/20260320_152647__CNN__lr_1e-04__ep_400__body__early_fusion,early_fusion,2026-03-20T15:26:47.865253,20260320_152647__CNN__lr_1e-04__ep_400__body__early_fusion,0.9342105263157896,0.9332174638487208,0.9346084465195248,0.2256536091628827,0.9389705882352942,0.9447078173374612,0.9375,0.9342105263157896,0.9455587392550144,0.2829223504893076,cuda,400,0.0001,False,True,0.0001,0.96,0.2276956148942311
+)",129445,129445,./gesture_checkpoints/best_cnn_early_fusion.pt,./logger/20260320_152647__CNN__lr_1e-04__ep_400__body__early_fusion,./logger/20260320_152647__CNN__lr_1e-04__ep_400__body__early_fusion,early_fusion,2026-03-20T15:26:47.865253,20260320_152647__CNN__lr_1e-04__ep_400__body__early_fusion,0.9342105263157896,0.9332174638487208,0.9346084465195248,0.2256536091628827,0.9389705882352942,0.9447078173374612,0.9375,0.9342105263157896,0.9455587392550144,0.2829223504893076,cuda,,,400,0.0001,False,True,0.0001,0.96,0.2276956148942311
 ./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/accuracy_curve.png,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/confusion_matrix.png,16,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,hand_dummy/data,64,True,"['go', 'stop', 'left', 'right', 'null']",5,0,42,True,True,0.15,0.7,True,0.15,True,False,True,64,"[112, 112]",./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion/loss_curve.png,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,"GestureCNNClassifier(
   (encoder): MultiModalEarlyFusionEncoder(
     (body_encoder): BodyEncoder(
@@ -94,7 +94,7 @@ acc_plot_path,checkpoint_path,cm_plot_path,data.BATCH_SIZE,data.BODY_LANDMARK_US
     (2): Dropout(p=0.3, inplace=False)
     (3): Linear(in_features=128, out_features=5, bias=True)
   )
-)",143109,143109,./gesture_checkpoints/best_cnn_early_fusion.pt,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,early_fusion,2026-03-20T15:29:34.285014,20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,0.9605263157894736,0.9603110599078342,0.9610417171962164,0.0945959289215113,0.9608333333333334,0.9640350877192982,0.9625,0.9605263157894736,0.9799426934097422,0.084508462128547,cuda,400,0.0001,False,True,0.0001,0.9866666666666668,0.0860578450560569
+)",143109,143109,./gesture_checkpoints/best_cnn_early_fusion.pt,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,./logger/20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,early_fusion,2026-03-20T15:29:34.285014,20260320_152934__CNN__lr_1e-04__ep_400__body+hand__early_fusion,0.9605263157894736,0.9603110599078342,0.9610417171962164,0.0945959289215113,0.9608333333333334,0.9640350877192982,0.9625,0.9605263157894736,0.9799426934097422,0.084508462128547,cuda,,,400,0.0001,False,True,0.0001,0.9866666666666668,0.0860578450560569
 ./logger/20260320_153137__CNN__lr_0p01__ep_400__body+hand__early_fusion/accuracy_curve.png,./logger/20260320_153137__CNN__lr_0p01__ep_400__body+hand__early_fusion/best_model.pt,./logger/20260320_153137__CNN__lr_0p01__ep_400__body+hand__early_fusion/confusion_matrix.png,16,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,hand_dummy/data,64,True,"['go', 'stop', 'left', 'right', 'null']",5,0,42,True,True,0.15,0.7,True,0.15,True,False,True,64,"[112, 112]",./logger/20260320_153137__CNN__lr_0p01__ep_400__body+hand__early_fusion/loss_curve.png,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,"GestureCNNClassifier(
   (encoder): MultiModalEarlyFusionEncoder(
     (body_encoder): BodyEncoder(
@@ -130,7 +130,7 @@ acc_plot_path,checkpoint_path,cm_plot_path,data.BATCH_SIZE,data.BODY_LANDMARK_US
     (2): Dropout(p=0.3, inplace=False)
     (3): Linear(in_features=128, out_features=5, bias=True)
   )
-)",143109,143109,./gesture_checkpoints/best_cnn_early_fusion.pt,./logger/20260320_153137__CNN__lr_0p01__ep_400__body+hand__early_fusion,./logger/20260320_153137__CNN__lr_0p01__ep_400__body+hand__early_fusion,early_fusion,2026-03-20T15:31:37.134315,20260320_153137__CNN__lr_0p01__ep_400__body+hand__early_fusion,0.9342105263157896,0.9346088246199482,0.937987627578401,0.249615459653892,0.9444444444444444,0.952485380116959,0.9366666666666668,0.9342105263157896,0.8882521489971347,0.3247912623479236,cuda,400,0.01,False,True,0.0001,0.9333333333333332,0.180644131998221
+)",143109,143109,./gesture_checkpoints/best_cnn_early_fusion.pt,./logger/20260320_153137__CNN__lr_0p01__ep_400__body+hand__early_fusion,./logger/20260320_153137__CNN__lr_0p01__ep_400__body+hand__early_fusion,early_fusion,2026-03-20T15:31:37.134315,20260320_153137__CNN__lr_0p01__ep_400__body+hand__early_fusion,0.9342105263157896,0.9346088246199482,0.937987627578401,0.249615459653892,0.9444444444444444,0.952485380116959,0.9366666666666668,0.9342105263157896,0.8882521489971347,0.3247912623479236,cuda,,,400,0.01,False,True,0.0001,0.9333333333333332,0.180644131998221
 ./logger/20260320_153322__CNN__lr_0p01__ep_400__hand__early_fusion/accuracy_curve.png,./logger/20260320_153322__CNN__lr_0p01__ep_400__hand__early_fusion/best_model.pt,./logger/20260320_153322__CNN__lr_0p01__ep_400__hand__early_fusion/confusion_matrix.png,16,"[5, 6, 7, 8, 9, 10, 11, 12]",64,False,hand_dummy/data,64,True,"['go', 'stop', 'left', 'right', 'null']",5,0,42,True,True,0.15,0.7,True,0.15,True,False,True,64,"[112, 112]",./logger/20260320_153322__CNN__lr_0p01__ep_400__hand__early_fusion/loss_curve.png,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,"GestureCNNClassifier(
   (encoder): MultiModalEarlyFusionEncoder(
     (hand_encoder): HandEncoder(
@@ -160,7 +160,7 @@ acc_plot_path,checkpoint_path,cm_plot_path,data.BATCH_SIZE,data.BODY_LANDMARK_US
     (2): Dropout(p=0.3, inplace=False)
     (3): Linear(in_features=128, out_features=5, bias=True)
   )
-)",130277,130277,./gesture_checkpoints/best_cnn_early_fusion.pt,./logger/20260320_153322__CNN__lr_0p01__ep_400__hand__early_fusion,./logger/20260320_153322__CNN__lr_0p01__ep_400__hand__early_fusion,early_fusion,2026-03-20T15:33:22.416155,20260320_153322__CNN__lr_0p01__ep_400__hand__early_fusion,0.9473684210526316,0.9468356374807988,0.9477514350392108,0.1700262209694636,0.9559210526315788,0.9544234764542936,0.9442307692307692,0.9473684210526316,0.982808022922636,0.0765348594304825,cuda,400,0.01,False,True,0.0001,0.9333333333333332,0.20543600132068
+)",130277,130277,./gesture_checkpoints/best_cnn_early_fusion.pt,./logger/20260320_153322__CNN__lr_0p01__ep_400__hand__early_fusion,./logger/20260320_153322__CNN__lr_0p01__ep_400__hand__early_fusion,early_fusion,2026-03-20T15:33:22.416155,20260320_153322__CNN__lr_0p01__ep_400__hand__early_fusion,0.9473684210526316,0.9468356374807988,0.9477514350392108,0.1700262209694636,0.9559210526315788,0.9544234764542936,0.9442307692307692,0.9473684210526316,0.982808022922636,0.0765348594304825,cuda,,,400,0.01,False,True,0.0001,0.9333333333333332,0.20543600132068
 ./logger/20260320_153442__CNN__lr_0p01__ep_400__body__early_fusion/accuracy_curve.png,./logger/20260320_153442__CNN__lr_0p01__ep_400__body__early_fusion/best_model.pt,./logger/20260320_153442__CNN__lr_0p01__ep_400__body__early_fusion/confusion_matrix.png,16,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,hand_dummy/data,64,False,"['go', 'stop', 'left', 'right', 'null']",5,0,42,True,True,0.15,0.7,True,0.15,True,False,True,64,"[112, 112]",./logger/20260320_153442__CNN__lr_0p01__ep_400__body__early_fusion/loss_curve.png,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,"GestureCNNClassifier(
   (encoder): MultiModalEarlyFusionEncoder(
     (body_encoder): BodyEncoder(
@@ -190,7 +190,7 @@ acc_plot_path,checkpoint_path,cm_plot_path,data.BATCH_SIZE,data.BODY_LANDMARK_US
     (2): Dropout(p=0.3, inplace=False)
     (3): Linear(in_features=128, out_features=5, bias=True)
   )
-)",129445,129445,./gesture_checkpoints/best_cnn_early_fusion.pt,./logger/20260320_153442__CNN__lr_0p01__ep_400__body__early_fusion,./logger/20260320_153442__CNN__lr_0p01__ep_400__body__early_fusion,early_fusion,2026-03-20T15:34:42.456677,20260320_153442__CNN__lr_0p01__ep_400__body__early_fusion,0.8421052631578947,0.8376099736099736,0.8425524088681984,0.4767375306079262,0.8526610644257703,0.8558712958867757,0.8351282051282052,0.8421052631578947,0.8166189111747851,0.5265137235551304,cuda,400,0.01,False,True,0.0001,0.8933333333333333,0.3922758849461873
+)",129445,129445,./gesture_checkpoints/best_cnn_early_fusion.pt,./logger/20260320_153442__CNN__lr_0p01__ep_400__body__early_fusion,./logger/20260320_153442__CNN__lr_0p01__ep_400__body__early_fusion,early_fusion,2026-03-20T15:34:42.456677,20260320_153442__CNN__lr_0p01__ep_400__body__early_fusion,0.8421052631578947,0.8376099736099736,0.8425524088681984,0.4767375306079262,0.8526610644257703,0.8558712958867757,0.8351282051282052,0.8421052631578947,0.8166189111747851,0.5265137235551304,cuda,,,400,0.01,False,True,0.0001,0.8933333333333333,0.3922758849461873
 ./logger/20260320_153729__LSTM__lr_3e-04__ep_400__body__early_fusion/accuracy_curve.png,./logger/20260320_153729__LSTM__lr_3e-04__ep_400__body__early_fusion/best_model.pt,./logger/20260320_153729__LSTM__lr_3e-04__ep_400__body__early_fusion/confusion_matrix.png,16,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,hand_dummy/data,64,False,"['go', 'stop', 'left', 'right', 'null']",5,0,42,True,True,0.15,0.7,True,0.15,True,False,True,64,"[112, 112]",./logger/20260320_153729__LSTM__lr_3e-04__ep_400__body__early_fusion/loss_curve.png,32,128,0.2,128,0.3,32,False,0.2,128,2,LSTM,True,True,64,"GestureLSTMClassifier(
   (encoder): MultiModalEarlyFusionEncoder(
     (body_encoder): BodyEncoder(
@@ -207,7 +207,7 @@ acc_plot_path,checkpoint_path,cm_plot_path,data.BATCH_SIZE,data.BODY_LANDMARK_US
     (2): Dropout(p=0.3, inplace=False)
     (3): Linear(in_features=128, out_features=5, bias=True)
   )
-)",232741,232741,./gesture_checkpoints/best_lstm_early_fusion.pt,./logger/20260320_153729__LSTM__lr_3e-04__ep_400__body__early_fusion,./logger/20260320_153729__LSTM__lr_3e-04__ep_400__body__early_fusion,early_fusion,2026-03-20T15:37:29.130339,20260320_153729__LSTM__lr_3e-04__ep_400__body__early_fusion,0.3026315789473684,0.2580320366132723,0.2502047452727929,1.4929645186976384,0.2648235294117647,0.2578405572755418,0.3126923076923076,0.3026315789473684,0.3524355300859599,1.466482720948905,cuda,400,0.0003,False,True,0.0001,0.3733333333333333,1.515263220469157
+)",232741,232741,./gesture_checkpoints/best_lstm_early_fusion.pt,./logger/20260320_153729__LSTM__lr_3e-04__ep_400__body__early_fusion,./logger/20260320_153729__LSTM__lr_3e-04__ep_400__body__early_fusion,early_fusion,2026-03-20T15:37:29.130339,20260320_153729__LSTM__lr_3e-04__ep_400__body__early_fusion,0.3026315789473684,0.2580320366132723,0.2502047452727929,1.4929645186976384,0.2648235294117647,0.2578405572755418,0.3126923076923076,0.3026315789473684,0.3524355300859599,1.466482720948905,cuda,,,400,0.0003,False,True,0.0001,0.3733333333333333,1.515263220469157
 ./logger/20260320_153930__LSTM__lr_3e-04__ep_400__hand__early_fusion/accuracy_curve.png,./logger/20260320_153930__LSTM__lr_3e-04__ep_400__hand__early_fusion/best_model.pt,./logger/20260320_153930__LSTM__lr_3e-04__ep_400__hand__early_fusion/confusion_matrix.png,16,"[5, 6, 7, 8, 9, 10, 11, 12]",64,False,hand_dummy/data,64,True,"['go', 'stop', 'left', 'right', 'null']",5,0,42,True,True,0.15,0.7,True,0.15,True,False,True,64,"[112, 112]",./logger/20260320_153930__LSTM__lr_3e-04__ep_400__hand__early_fusion/loss_curve.png,32,128,0.2,128,0.3,32,False,0.2,128,2,LSTM,True,True,64,"GestureLSTMClassifier(
   (encoder): MultiModalEarlyFusionEncoder(
     (hand_encoder): HandEncoder(
@@ -224,4 +224,400 @@ acc_plot_path,checkpoint_path,cm_plot_path,data.BATCH_SIZE,data.BODY_LANDMARK_US
     (2): Dropout(p=0.3, inplace=False)
     (3): Linear(in_features=128, out_features=5, bias=True)
   )
-)",233573,233573,./gesture_checkpoints/best_lstm_early_fusion.pt,./logger/20260320_153930__LSTM__lr_3e-04__ep_400__hand__early_fusion,./logger/20260320_153930__LSTM__lr_3e-04__ep_400__hand__early_fusion,early_fusion,2026-03-20T15:39:30.760349,20260320_153930__LSTM__lr_3e-04__ep_400__hand__early_fusion,0.21052631578947367,0.06956521739130435,0.07322654462242563,1.6079163300363641,0.042105263157894736,0.0443213296398892,0.2,0.21052631578947367,0.22063037249283668,1.6079070018150745,cuda,400,0.0003,False,True,0.0001,0.21333333333333335,1.6087835105260213
+)",233573,233573,./gesture_checkpoints/best_lstm_early_fusion.pt,./logger/20260320_153930__LSTM__lr_3e-04__ep_400__hand__early_fusion,./logger/20260320_153930__LSTM__lr_3e-04__ep_400__hand__early_fusion,early_fusion,2026-03-20T15:39:30.760349,20260320_153930__LSTM__lr_3e-04__ep_400__hand__early_fusion,0.2105263157894736,0.0695652173913043,0.0732265446224256,1.607916330036364,0.0421052631578947,0.0443213296398892,0.2,0.2105263157894736,0.2206303724928366,1.6079070018150745,cuda,,,400,0.0003,False,True,0.0001,0.2133333333333333,1.6087835105260213
+./logger/20260320_160615__CNN__lr_3e-04__ep_400__hand__early_fusion/accuracy_curve.png,./logger/20260320_160615__CNN__lr_3e-04__ep_400__hand__early_fusion/best_model.pt,./logger/20260320_160615__CNN__lr_3e-04__ep_400__hand__early_fusion/confusion_matrix.png,16,"[5, 6, 7, 8, 9, 10, 11, 12]",64,False,hand_dummy/data,64,True,"['go', 'stop', 'left', 'right', 'null']",5,0,42,True,True,0.15,0.7,True,0.15,True,False,True,64,"[112, 112]",./logger/20260320_160615__CNN__lr_3e-04__ep_400__hand__early_fusion/loss_curve.png,32,128,0.2,128,0.3,32,False,0.2,128,2,CNN,False,False,64,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (hand_encoder): HandEncoder(
+      (net): Identity()
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(42, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",132741,132741,./gesture_checkpoints/best_cnn_early_fusion.pt,./logger/20260320_160615__CNN__lr_3e-04__ep_400__hand__early_fusion,./logger/20260320_160615__CNN__lr_3e-04__ep_400__hand__early_fusion,early_fusion,2026-03-20T16:06:15.413393,20260320_160615__CNN__lr_3e-04__ep_400__hand__early_fusion,0.9736842105263158,0.9730361681329424,0.9736204146730464,0.1407678805193618,0.9757352941176471,0.975280572755418,0.9721153846153848,0.9736842105263158,0.9742120343839542,0.0729800422614531,cuda,,,400,0.0003,False,True,0.0001,0.96,0.1278435769180456
+./logger/20260320_160815__CNN__lr_3e-04__ep_400__hand__early_fusion/accuracy_curve.png,./logger/20260320_160815__CNN__lr_3e-04__ep_400__hand__early_fusion/best_model.pt,./logger/20260320_160815__CNN__lr_3e-04__ep_400__hand__early_fusion/confusion_matrix.png,16,"[5, 6, 7, 8, 9, 10, 11, 12]",64,False,hand_dummy/data,64,True,"['go', 'stop', 'left', 'right', 'null']",5,0,42,True,True,0.15,0.7,True,0.15,True,False,True,64,"[112, 112]",./logger/20260320_160815__CNN__lr_3e-04__ep_400__hand__early_fusion/loss_curve.png,32,128,0.2,64,0.3,32,False,0.2,128,2,CNN,False,False,64,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (hand_encoder): HandEncoder(
+      (net): Identity()
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(42, 64, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=64, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",42181,42181,./gesture_checkpoints/best_cnn_early_fusion.pt,./logger/20260320_160815__CNN__lr_3e-04__ep_400__hand__early_fusion,./logger/20260320_160815__CNN__lr_3e-04__ep_400__hand__early_fusion,early_fusion,2026-03-20T16:08:15.656012,20260320_160815__CNN__lr_3e-04__ep_400__hand__early_fusion,0.9736842105263158,0.9730361681329424,0.9736204146730464,0.1538686097452515,0.9757352941176471,0.975280572755418,0.9721153846153848,0.9736842105263158,0.97134670487106,0.0943018730761841,cuda,,,400,0.0003,False,True,0.0001,0.9466666666666668,0.1752625179787476
+./logger/20260320_161005__CNN__lr_3e-04__ep_400__body+hand__early_fusion/accuracy_curve.png,./logger/20260320_161005__CNN__lr_3e-04__ep_400__body+hand__early_fusion/best_model.pt,./logger/20260320_161005__CNN__lr_3e-04__ep_400__body+hand__early_fusion/confusion_matrix.png,16,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,hand_dummy/data,64,True,"['go', 'stop', 'left', 'right', 'null']",5,0,42,True,True,0.15,0.7,True,0.15,True,False,True,64,"[112, 112]",./logger/20260320_161005__CNN__lr_3e-04__ep_400__body+hand__early_fusion/loss_curve.png,32,128,0.2,64,0.3,32,False,0.2,128,2,CNN,False,False,64,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Identity()
+    )
+    (hand_encoder): HandEncoder(
+      (net): Identity()
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(58, 64, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=64, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",45253,45253,./gesture_checkpoints/best_cnn_early_fusion.pt,./logger/20260320_161005__CNN__lr_3e-04__ep_400__body+hand__early_fusion,./logger/20260320_161005__CNN__lr_3e-04__ep_400__body+hand__early_fusion,early_fusion,2026-03-20T16:10:05.447610,20260320_161005__CNN__lr_3e-04__ep_400__body+hand__early_fusion,0.9605263157894736,0.9599555061179088,0.9619313857502488,0.1477312555438593,0.9625,0.9679276315789472,0.9625,0.9605263157894736,0.9455587392550144,0.2014990034793372,cuda,,,400,0.0003,False,True,0.0001,0.9466666666666668,0.1820354155699412
+./logger/20260320_161205__CNN__lr_3e-04__ep_400__body+hand__early_fusion/accuracy_curve.png,./logger/20260320_161205__CNN__lr_3e-04__ep_400__body+hand__early_fusion/best_model.pt,./logger/20260320_161205__CNN__lr_3e-04__ep_400__body+hand__early_fusion/confusion_matrix.png,16,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,hand_dummy/data,64,True,"['go', 'stop', 'left', 'right', 'null']",5,0,42,True,True,0.15,0.7,True,0.15,True,False,True,64,"[112, 112]",./logger/20260320_161205__CNN__lr_3e-04__ep_400__body+hand__early_fusion/loss_curve.png,32,64,0.2,64,0.3,32,False,0.2,128,2,CNN,False,False,64,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Identity()
+    )
+    (hand_encoder): HandEncoder(
+      (net): Identity()
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(58, 64, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=64, out_features=64, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=64, out_features=5, bias=True)
+  )
+)",40773,40773,./gesture_checkpoints/best_cnn_early_fusion.pt,./logger/20260320_161205__CNN__lr_3e-04__ep_400__body+hand__early_fusion,./logger/20260320_161205__CNN__lr_3e-04__ep_400__body+hand__early_fusion,early_fusion,2026-03-20T16:12:05.660941,20260320_161205__CNN__lr_3e-04__ep_400__body+hand__early_fusion,0.9605263157894736,0.9599078341013826,0.9610417171962164,0.1896096585612548,0.9608333333333334,0.9648574561403508,0.9625,0.9605263157894736,0.9426934097421203,0.3011850473873936,cuda,,,400,0.0003,False,True,0.0001,0.9733333333333334,0.2288568381468455
+./logger/20260320_161610__CNN__lr_3e-04__ep_400__body+hand__early_fusion/accuracy_curve.png,./logger/20260320_161610__CNN__lr_3e-04__ep_400__body+hand__early_fusion/best_model.pt,./logger/20260320_161610__CNN__lr_3e-04__ep_400__body+hand__early_fusion/confusion_matrix.png,16,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,hand_dummy/data,64,True,"['go', 'stop', 'left', 'right', 'null']",5,0,42,True,True,0.15,0.7,True,0.15,True,False,True,64,"[112, 112]",./logger/20260320_161610__CNN__lr_3e-04__ep_400__body+hand__early_fusion/loss_curve.png,32,64,0.2,64,0.3,32,False,0.2,128,2,CNN,False,False,64,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Identity()
+    )
+    (hand_encoder): HandEncoder(
+      (net): Identity()
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(58, 64, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=64, out_features=64, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=64, out_features=5, bias=True)
+  )
+)",40773,40773,./gesture_checkpoints/best_cnn_early_fusion.pt,./logger/20260320_161610__CNN__lr_3e-04__ep_400__body+hand__early_fusion,./logger/20260320_161610__CNN__lr_3e-04__ep_400__body+hand__early_fusion,early_fusion,2026-03-20T16:16:10.946624,20260320_161610__CNN__lr_3e-04__ep_400__body+hand__early_fusion,0.9473684210526316,0.9469777265745009,0.9478289978979708,0.1718663185050613,0.9498039215686276,0.9539731682146544,0.95,0.9473684210526316,0.9656160458452722,0.2100797492402331,cuda,0.0001,10.0,400,0.0003,False,True,0.0001,0.96,0.1813828708728154
+./logger/20260320_161723__CNN__lr_1e-04__ep_400__body+hand__early_fusion/accuracy_curve.png,./logger/20260320_161723__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,./logger/20260320_161723__CNN__lr_1e-04__ep_400__body+hand__early_fusion/confusion_matrix.png,16,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,hand_dummy/data,64,True,"['go', 'stop', 'left', 'right', 'null']",5,0,42,True,True,0.15,0.7,True,0.15,True,False,True,64,"[112, 112]",./logger/20260320_161723__CNN__lr_1e-04__ep_400__body+hand__early_fusion/loss_curve.png,32,64,0.2,32,0.3,32,False,0.2,128,2,CNN,False,False,64,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Identity()
+    )
+    (hand_encoder): HandEncoder(
+      (net): Identity()
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(58, 32, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(32, 32, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(32, 32, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=32, out_features=64, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=64, out_features=5, bias=True)
+  )
+)",14437,14437,./gesture_checkpoints/best_cnn_early_fusion.pt,./logger/20260320_161723__CNN__lr_1e-04__ep_400__body+hand__early_fusion,./logger/20260320_161723__CNN__lr_1e-04__ep_400__body+hand__early_fusion,early_fusion,2026-03-20T16:17:23.526613,20260320_161723__CNN__lr_1e-04__ep_400__body+hand__early_fusion,0.9078947368421052,0.9064436870888484,0.9091211523299808,0.4370593256071994,0.9303571428571428,0.9275140977443608,0.9009615384615384,0.9078947368421052,0.8882521489971347,0.5679197306277759,cuda,0.0001,10.0,400,0.0001,False,True,0.0001,0.9333333333333332,0.4838233923912048
+./logger/20260320_161830__CNN__lr_1e-04__ep_400__body+hand__early_fusion/accuracy_curve.png,./logger/20260320_161830__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,./logger/20260320_161830__CNN__lr_1e-04__ep_400__body+hand__early_fusion/confusion_matrix.png,16,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,hand_dummy/data,64,True,"['go', 'stop', 'left', 'right', 'null']",5,0,42,True,True,0.15,0.7,True,0.15,True,False,True,64,"[112, 112]",./logger/20260320_161830__CNN__lr_1e-04__ep_400__body+hand__early_fusion/loss_curve.png,32,64,0.2,64,0.3,32,False,0.2,128,2,CNN,False,False,64,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Identity()
+    )
+    (hand_encoder): HandEncoder(
+      (net): Identity()
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(58, 64, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=64, out_features=64, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=64, out_features=5, bias=True)
+  )
+)",40773,40773,./gesture_checkpoints/best_cnn_early_fusion.pt,./logger/20260320_161830__CNN__lr_1e-04__ep_400__body+hand__early_fusion,./logger/20260320_161830__CNN__lr_1e-04__ep_400__body+hand__early_fusion,early_fusion,2026-03-20T16:18:30.668781,20260320_161830__CNN__lr_1e-04__ep_400__body+hand__early_fusion,0.9605263157894736,0.9599555061179088,0.9619313857502488,0.1481438969310961,0.9625,0.9679276315789472,0.9625,0.9605263157894736,0.968481375358166,0.2204851807871657,cuda,0.0001,10.0,400,0.0001,False,True,0.0001,0.96,0.1840906331936518
+./logger/20260320_161939__CNN__lr_1e-04__ep_400__body+hand__early_fusion/accuracy_curve.png,./logger/20260320_161939__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,./logger/20260320_161939__CNN__lr_1e-04__ep_400__body+hand__early_fusion/confusion_matrix.png,16,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,hand_dummy/data,64,True,"['go', 'stop', 'left', 'right', 'null']",5,0,42,True,True,0.15,0.7,True,0.15,True,False,True,64,"[112, 112]",./logger/20260320_161939__CNN__lr_1e-04__ep_400__body+hand__early_fusion/loss_curve.png,32,32,0.2,32,0.3,32,False,0.2,128,2,CNN,False,False,64,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Identity()
+    )
+    (hand_encoder): HandEncoder(
+      (net): Identity()
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(58, 32, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(32, 32, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(32, 32, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=32, out_features=32, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=32, out_features=5, bias=True)
+  )
+)",13221,13221,./gesture_checkpoints/best_cnn_early_fusion.pt,./logger/20260320_161939__CNN__lr_1e-04__ep_400__body+hand__early_fusion,./logger/20260320_161939__CNN__lr_1e-04__ep_400__body+hand__early_fusion,early_fusion,2026-03-20T16:19:39.052994,20260320_161939__CNN__lr_1e-04__ep_400__body+hand__early_fusion,0.8026315789473685,0.7865090496226541,0.7823011244802046,0.7626159097018995,0.873076923076923,0.8696862348178137,0.8038461538461539,0.8026315789473685,0.7736389684813754,0.876138170674059,cuda,0.0001,10.0,400,0.0001,False,True,0.0001,0.8533333333333334,0.7996690797805787
+./logger/20260320_162017__CNN__lr_1e-04__ep_400__body+hand__early_fusion/accuracy_curve.png,./logger/20260320_162017__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,./logger/20260320_162017__CNN__lr_1e-04__ep_400__body+hand__early_fusion/confusion_matrix.png,16,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,hand_dummy/data,64,True,"['go', 'stop', 'left', 'right', 'null']",5,0,42,True,True,0.15,0.7,True,0.15,True,False,True,64,"[112, 112]",./logger/20260320_162017__CNN__lr_1e-04__ep_400__body+hand__early_fusion/loss_curve.png,32,128,0.2,32,0.3,32,False,0.2,128,2,CNN,False,False,64,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Identity()
+    )
+    (hand_encoder): HandEncoder(
+      (net): Identity()
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(58, 32, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(32, 32, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(32, 32, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=32, out_features=128, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=128, out_features=5, bias=True)
+  )
+)",16869,16869,./gesture_checkpoints/best_cnn_early_fusion.pt,./logger/20260320_162017__CNN__lr_1e-04__ep_400__body+hand__early_fusion,./logger/20260320_162017__CNN__lr_1e-04__ep_400__body+hand__early_fusion,early_fusion,2026-03-20T16:20:17.148356,20260320_162017__CNN__lr_1e-04__ep_400__body+hand__early_fusion,0.9078947368421052,0.9053016726403824,0.9084498600892914,0.4063751634798552,0.9069467787114844,0.9120558749815716,0.9067307692307692,0.9078947368421052,0.9083094555873924,0.5354656896481883,cuda,0.0001,10.0,400,0.0001,False,True,0.0001,0.9466666666666668,0.4564879012107849
+./logger/20260320_162102__CNN__lr_1e-04__ep_400__body+hand__early_fusion/accuracy_curve.png,./logger/20260320_162102__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,./logger/20260320_162102__CNN__lr_1e-04__ep_400__body+hand__early_fusion/confusion_matrix.png,16,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,hand_dummy/data,64,True,"['go', 'stop', 'left', 'right', 'null']",5,0,42,True,True,0.15,0.7,True,0.15,True,False,True,64,"[112, 112]",./logger/20260320_162102__CNN__lr_1e-04__ep_400__body+hand__early_fusion/loss_curve.png,32,32,0.2,128,0.3,32,False,0.2,128,2,CNN,False,False,64,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Identity()
+    )
+    (hand_encoder): HandEncoder(
+      (net): Identity()
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(58, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=32, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=32, out_features=5, bias=True)
+  )
+)",126021,126021,./gesture_checkpoints/best_cnn_early_fusion.pt,./logger/20260320_162102__CNN__lr_1e-04__ep_400__body+hand__early_fusion,./logger/20260320_162102__CNN__lr_1e-04__ep_400__body+hand__early_fusion,early_fusion,2026-03-20T16:21:02.008982,20260320_162102__CNN__lr_1e-04__ep_400__body+hand__early_fusion,0.9605263157894736,0.9599078341013826,0.9610417171962164,0.1631603515461871,0.9608333333333334,0.9648574561403508,0.9625,0.9605263157894736,0.9742120343839542,0.2478629079964919,cuda,0.0001,10.0,400,0.0001,False,True,0.0001,0.9733333333333334,0.1792630682388941
+./logger/20260320_162151__CNN__lr_1e-04__ep_400__body+hand__early_fusion/accuracy_curve.png,./logger/20260320_162151__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,./logger/20260320_162151__CNN__lr_1e-04__ep_400__body+hand__early_fusion/confusion_matrix.png,16,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,hand_dummy/data,64,True,"['go', 'stop', 'left', 'right', 'null']",5,0,42,True,True,0.15,0.7,True,0.15,True,False,True,64,"[112, 112]",./logger/20260320_162151__CNN__lr_1e-04__ep_400__body+hand__early_fusion/loss_curve.png,32,32,0.2,128,0.3,32,False,0.2,128,2,CNN,False,True,64,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Identity()
+    )
+    (hand_encoder): HandEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=42, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(48, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=32, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=32, out_features=5, bias=True)
+  )
+)",123557,123557,./gesture_checkpoints/best_cnn_early_fusion.pt,./logger/20260320_162151__CNN__lr_1e-04__ep_400__body+hand__early_fusion,./logger/20260320_162151__CNN__lr_1e-04__ep_400__body+hand__early_fusion,early_fusion,2026-03-20T16:21:51.763305,20260320_162151__CNN__lr_1e-04__ep_400__body+hand__early_fusion,0.9736842105263158,0.972811059907834,0.9741996119330584,0.1747632132549035,0.9733333333333334,0.9771929824561404,0.975,0.9736842105263158,0.9484240687679084,0.2909306217742854,cuda,0.0001,10.0,400,0.0001,False,True,0.0001,0.96,0.1820237827301025
+./logger/20260320_162231__CNN__lr_1e-04__ep_400__body+hand__early_fusion/accuracy_curve.png,./logger/20260320_162231__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,./logger/20260320_162231__CNN__lr_1e-04__ep_400__body+hand__early_fusion/confusion_matrix.png,16,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,hand_dummy/data,64,True,"['go', 'stop', 'left', 'right', 'null']",5,0,42,True,True,0.15,0.7,True,0.15,True,False,True,64,"[112, 112]",./logger/20260320_162231__CNN__lr_1e-04__ep_400__body+hand__early_fusion/loss_curve.png,32,32,0.2,128,0.3,32,False,0.2,128,2,CNN,True,False,64,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=16, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+    (hand_encoder): HandEncoder(
+      (net): Identity()
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(74, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=32, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=32, out_features=5, bias=True)
+  )
+)",132709,132709,./gesture_checkpoints/best_cnn_early_fusion.pt,./logger/20260320_162231__CNN__lr_1e-04__ep_400__body+hand__early_fusion,./logger/20260320_162231__CNN__lr_1e-04__ep_400__body+hand__early_fusion,early_fusion,2026-03-20T16:22:31.872586,20260320_162231__CNN__lr_1e-04__ep_400__body+hand__early_fusion,0.9605263157894736,0.9599078341013826,0.9610417171962164,0.2235448140847055,0.9608333333333334,0.9648574561403508,0.9625,0.9605263157894736,0.968481375358166,0.3224721437368147,cuda,0.0001,10.0,400,0.0001,False,True,0.0001,0.96,0.2264766212304433
+./logger/20260320_162327__CNN__lr_1e-04__ep_400__body+hand__early_fusion/accuracy_curve.png,./logger/20260320_162327__CNN__lr_1e-04__ep_400__body+hand__early_fusion/best_model.pt,./logger/20260320_162327__CNN__lr_1e-04__ep_400__body+hand__early_fusion/confusion_matrix.png,16,"[5, 6, 7, 8, 9, 10, 11, 12]",64,True,hand_dummy/data,64,True,"['go', 'stop', 'left', 'right', 'null']",5,0,42,True,True,0.15,0.7,True,0.15,True,False,True,64,"[112, 112]",./logger/20260320_162327__CNN__lr_1e-04__ep_400__body+hand__early_fusion/loss_curve.png,32,32,0.2,128,0.3,32,False,0.2,128,2,CNN,True,True,64,"GestureCNNClassifier(
+  (encoder): MultiModalEarlyFusionEncoder(
+    (body_encoder): BodyEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=16, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+    (hand_encoder): HandEncoder(
+      (net): Sequential(
+        (0): Linear(in_features=42, out_features=32, bias=True)
+        (1): ReLU(inplace=True)
+      )
+    )
+  )
+  (temporal_conv): Sequential(
+    (0): Conv1d(64, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Conv1d(128, 128, kernel_size=(3,), stride=(1,), padding=(1,))
+    (9): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): AdaptiveAvgPool1d(output_size=1)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=32, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=32, out_features=5, bias=True)
+  )
+)",130245,130245,./gesture_checkpoints/best_cnn_early_fusion.pt,./logger/20260320_162327__CNN__lr_1e-04__ep_400__body+hand__early_fusion,./logger/20260320_162327__CNN__lr_1e-04__ep_400__body+hand__early_fusion,early_fusion,2026-03-20T16:23:27.634478,20260320_162327__CNN__lr_1e-04__ep_400__body+hand__early_fusion,0.9473684210526315,0.9466221727845754,0.948320746248268,0.18853726002730822,0.95,0.9555921052631579,0.95,0.9473684210526315,0.9484240687679083,0.2712746689517723,cuda,0.0001,10.0,400,0.0001,False,True,0.0001,0.9466666666666667,0.1896006457010905

@@ -1,0 +1,2 @@
+run_name,train_loss_last,train_acc_last,val_loss_last,val_acc_last,test_loss,test_acc,test_precision_macro,test_recall_macro,test_f1_macro,test_precision_weighted,test_recall_weighted,test_f1_weighted
+20260320_161939__CNN__lr_1e-04__ep_400__body+hand__early_fusion,0.876138170674059,0.7736389684813754,0.7996690797805787,0.8533333333333334,0.7626159097018995,0.8026315789473685,0.873076923076923,0.8038461538461539,0.7865090496226541,0.8696862348178137,0.8026315789473685,0.7823011244802046
