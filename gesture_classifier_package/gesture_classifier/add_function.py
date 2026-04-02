@@ -17,9 +17,38 @@ def str2bool(value):
     raise argparse.ArgumentTypeError(f"Invalid boolean value: {value}")
 
 
+def parse_new_class_train_samples(value):
+    if value is None:
+        return None
+
+    text = str(value).strip()
+    if len(text) == 0:
+        return None
+
+    if ":" not in text:
+        return int(text)
+
+    result = {}
+    for item in text.split(","):
+        item = item.strip()
+        if len(item) == 0:
+            continue
+        if ":" not in item:
+            raise argparse.ArgumentTypeError(
+                "Per-class caps must use 'class:count' entries separated by commas."
+            )
+        class_name, class_cap = item.split(":", 1)
+        class_name = class_name.strip()
+        class_cap = class_cap.strip()
+        if len(class_name) == 0:
+            raise argparse.ArgumentTypeError("Class name in train cap mapping cannot be empty.")
+        result[class_name] = None if class_cap.lower() == "none" else int(class_cap)
+    return result
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Add a new gesture class/function to an existing gesture classifier."
+        description="Add one or more new gesture classes/functions to an existing gesture classifier."
     )
 
     parser.add_argument(
@@ -31,15 +60,19 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--new_class_name",
         required=True,
+        nargs="+",
         type=str,
-        help="Name of the new gesture class to add.",
+        help="One or more new gesture classes to add. Example: --new_class_name sit run stand",
     )
 
     parser.add_argument(
         "--new_class_train_samples",
         default=None,
-        type=int,
-        help="Maximum number of training samples to keep for the new class in the training split.",
+        type=parse_new_class_train_samples,
+        help=(
+            "Training cap for requested new classes. Use a single int for the same cap across all new classes, "
+            "or a comma-separated mapping like 'sit:5,run:10,stand:none'."
+        ),
     )
     parser.add_argument(
         "--init_mode",
@@ -181,6 +214,7 @@ def main() -> None:
     summary = {
         "run_dir": result["run_dir"],
         "device": result["device"],
+        "new_class_names": result["new_class_names"],
         "labels": result["labels"],
         "num_classes": result["num_classes"],
         "trainable_params": result["trainable_params"],

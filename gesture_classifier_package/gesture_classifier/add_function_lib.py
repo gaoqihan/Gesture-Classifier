@@ -1,16 +1,16 @@
 from __future__ import annotations
 
 import random
-from typing import Any, Dict, Optional
+from typing import Any, Dict, Iterable, List, Optional, Union
 
 import numpy as np
 import torch
-from torch.utils.data import DataLoader
+from sklearn.model_selection import train_test_split
+from torch.utils.data import DataLoader, Subset
 
 from gesture_classifier.dataset import (
     GestureEpisodeDataset,
     gesture_collate_fn_stacked,
-    make_train_val_test_subsets_for_new_class,
     summarize_subset_generic,
 )
 from gesture_classifier.io_utils import infer_device, load_run_config, load_previous_run_for_expansion
@@ -36,12 +36,127 @@ from gesture_classifier.train_utils import (
 )
 
 
+NewClassInput = Union[str, Iterable[str]]
+NewClassTrainSamples = Optional[Union[int, Dict[str, Optional[int]]]]
+
+
 def set_global_seed(seed: int) -> None:
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
     if torch.cuda.is_available():
         torch.cuda.manual_seed_all(seed)
+
+
+def normalize_new_class_input(new_class_names: NewClassInput) -> List[str]:
+    if isinstance(new_class_names, str):
+        raw_names = [new_class_names]
+    else:
+        raw_names = list(new_class_names)
+
+    cleaned: List[str] = []
+    seen = set()
+    for name in raw_names:
+        if not isinstance(name, str):
+            raise ValueError("Each requested new class must be a string.")
+        name = name.strip()
+        if len(name) == 0:
+            raise ValueError("Requested new class contains an empty string.")
+        if name not in seen:
+            cleaned.append(name)
+            seen.add(name)
+
+    if len(cleaned) == 0:
+        raise ValueError("At least one new class must be provided.")
+
+    return cleaned
+
+
+def make_train_val_test_subsets_for_new_classes(
+    dataset,
+    labels,
+    new_class_names: NewClassInput,
+    train_ratio: float = 0.7,
+    val_ratio: float = 0.15,
+    test_ratio: float = 0.15,
+    random_seed: int = 42,
+    stratify: bool = True,
+    new_class_train_samples: NewClassTrainSamples = None,
+):
+    if abs(train_ratio + val_ratio + test_ratio - 1.0) >= 1e-8:
+        raise ValueError("train_ratio + val_ratio + test_ratio must sum to 1.0")
+
+    requested_new = normalize_new_class_input(new_class_names)
+
+    indices = list(range(len(dataset)))
+    y = [dataset.samples[i]["label_idx"] for i in indices]
+    stratify_y = y if stratify else None
+
+    train_indices, temp_indices = train_test_split(
+        indices,
+        test_size=(1.0 - train_ratio),
+        random_state=random_seed,
+        stratify=stratify_y,
+    )
+
+    temp_y = [dataset.samples[i]["label_idx"] for i in temp_indices]
+    temp_stratify_y = temp_y if stratify else None
+    val_portion_of_temp = val_ratio / (val_ratio + test_ratio)
+
+    val_indices, test_indices = train_test_split(
+        temp_indices,
+        test_size=(1.0 - val_portion_of_temp),
+        random_state=random_seed,
+        stratify=temp_stratify_y,
+    )
+
+    if new_class_train_samples is not None:
+        label_to_idx = {name: i for i, name in enumerate(labels)}
+        rng = np.random.RandomState(random_seed)
+
+        if isinstance(new_class_train_samples, int):
+            cap_map = {class_name: new_class_train_samples for class_name in requested_new}
+        elif isinstance(new_class_train_samples, dict):
+            cap_map = {class_name: new_class_train_samples.get(class_name) for class_name in requested_new}
+        else:
+            raise ValueError(
+                "new_class_train_samples must be None, an int, or a dict[str, int | None]."
+            )
+
+        final_train_indices = list(train_indices)
+        for class_name in requested_new:
+            class_idx = label_to_idx[class_name]
+            class_cap = cap_map[class_name]
+
+            if class_cap is None:
+                continue
+            if class_cap < 0:
+                raise ValueError(f"Training cap for class '{class_name}' must be non-negative.")
+
+            class_train_indices = [
+                i for i in final_train_indices if dataset.samples[i]["label_idx"] == class_idx
+            ]
+            non_class_train_indices = [
+                i for i in final_train_indices if dataset.samples[i]["label_idx"] != class_idx
+            ]
+
+            if len(class_train_indices) == 0:
+                raise ValueError(
+                    f"No training samples found for requested new class '{class_name}'."
+                )
+
+            rng.shuffle(class_train_indices)
+            kept_class_train_indices = class_train_indices[:class_cap]
+            final_train_indices = non_class_train_indices + kept_class_train_indices
+            rng.shuffle(final_train_indices)
+
+        train_indices = final_train_indices
+
+    train_subset = Subset(dataset, train_indices)
+    val_subset = Subset(dataset, val_indices)
+    test_subset = Subset(dataset, test_indices)
+
+    return train_subset, val_subset, test_subset, train_indices, val_indices, test_indices
 
 
 def _build_dataset_from_config(
@@ -73,8 +188,8 @@ def _build_add_function_config(
     base_cfg: Dict[str, Any],
     data_root: str,
     labels,
-    new_class_name: str,
-    new_class_train_samples: Optional[int],
+    new_class_names: List[str],
+    new_class_train_samples: NewClassTrainSamples,
     init_mode: str,
     previous_run_dir: Optional[str],
     logger_root: str,
@@ -97,7 +212,8 @@ def _build_add_function_config(
         {
             "DATA_ROOT": data_root,
             "LABELS": list(labels),
-            "NEW_CLASS_NAME": new_class_name,
+            "NEW_CLASS_NAMES": list(new_class_names),
+            "NEW_CLASS_NAME": new_class_names[0] if len(new_class_names) == 1 else None,
             "NEW_CLASS_TRAIN_SAMPLES": new_class_train_samples,
             "INIT_MODE": init_mode,
             "PREVIOUS_RUN_DIR": previous_run_dir,
@@ -123,8 +239,8 @@ def _build_add_function_config(
 
 def add_function(
     data_root: str,
-    new_class_name: str,
-    new_class_train_samples: Optional[int] = None,
+    new_class_name: NewClassInput,
+    new_class_train_samples: NewClassTrainSamples = None,
     init_mode: str = "expand_from_checkpoint",
     previous_run_dir: Optional[str] = None,
     logger_root: str = "./logger_add_function",
@@ -153,6 +269,8 @@ def add_function(
             "previous_run_dir is required when init_mode='expand_from_checkpoint'"
         )
 
+    requested_new = normalize_new_class_input(new_class_name)
+
     set_global_seed(random_seed)
     torch_device = infer_device(device)
 
@@ -162,12 +280,13 @@ def add_function(
         if len(old_labels) == 0:
             raise ValueError("Saved config has empty or missing LABELS.")
 
-        if new_class_name in old_labels:
+        duplicates = [name for name in requested_new if name in old_labels]
+        if duplicates:
             raise ValueError(
-                f"new_class_name '{new_class_name}' already exists in old labels."
+                f"Requested new class(es) already exist in old labels: {duplicates}"
             )
 
-        labels = old_labels + [new_class_name]
+        labels = old_labels + requested_new
 
         loaded = load_previous_run_for_expansion(
             previous_run_dir=previous_run_dir,
@@ -208,7 +327,7 @@ def add_function(
         }
         old_labels = []
         old_num_classes = 0
-        labels = [new_class_name]
+        labels = list(requested_new)
 
         model = build_model_from_config_with_num_classes(
             cfg=base_cfg,
@@ -226,7 +345,7 @@ def add_function(
         base_cfg=base_cfg,
         data_root=data_root,
         labels=labels,
-        new_class_name=new_class_name,
+        new_class_names=requested_new,
         new_class_train_samples=new_class_train_samples,
         init_mode=init_mode,
         previous_run_dir=previous_run_dir,
@@ -264,10 +383,10 @@ def add_function(
     )
 
     train_subset, val_subset, test_subset, train_indices, val_indices, test_indices = (
-        make_train_val_test_subsets_for_new_class(
+        make_train_val_test_subsets_for_new_classes(
             dataset=dataset,
             labels=labels,
-            new_class_name=new_class_name,
+            new_class_names=requested_new,
             train_ratio=float(cfg.get("TRAIN_RATIO", 0.7)),
             val_ratio=float(cfg.get("VAL_RATIO", 0.15)),
             test_ratio=float(cfg.get("TEST_RATIO", 0.15)),
@@ -394,7 +513,8 @@ def add_function(
             "num_classes": num_classes,
             "old_labels": old_labels,
             "old_num_classes": old_num_classes,
-            "new_class_name": new_class_name,
+            "new_class_names": requested_new,
+            "new_class_name": requested_new[0] if len(requested_new) == 1 else None,
             "best_epoch": best_epoch,
             "train_indices": list(train_indices),
             "val_indices": list(val_indices),
@@ -414,6 +534,7 @@ def add_function(
         "artifact_paths": artifact_paths,
         "config": cfg,
         "labels": labels,
+        "new_class_names": requested_new,
         "num_classes": num_classes,
         "model": model,
         "model_structure": model_structure,
